@@ -14,8 +14,8 @@ if (-not $ff) {
   if     (Test-Path '.\ffmpeg.exe')          { $ff = '.\ffmpeg.exe' }
   elseif (Test-Path '.\ffmpeg\bin\ffmpeg.exe') { $ff = '.\ffmpeg\bin\ffmpeg.exe' }
   else {
-    Write-Host "ffmpeg не найден — скачиваю (~80 МБ, один раз)..."
-    Invoke-WebRequest 'https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip' -OutFile 'ffmpeg.zip'
+    Write-Host "ffmpeg не найден — скачиваю с GitHub (~167 МБ, один раз)..."
+    Invoke-WebRequest 'https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip' -OutFile 'ffmpeg.zip'
     Expand-Archive 'ffmpeg.zip' -DestinationPath 'ffmpeg_tmp' -Force
     $exe = Get-ChildItem 'ffmpeg_tmp' -Recurse -Filter 'ffmpeg.exe' | Select-Object -First 1
     New-Item -ItemType Directory -Force '.\ffmpeg\bin' | Out-Null
