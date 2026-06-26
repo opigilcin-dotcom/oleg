@@ -11,7 +11,8 @@ Write-Host "Рабочая папка: $dest"
 $ff = $null
 try { ffmpeg -version *> $null; $ff = 'ffmpeg' } catch { }
 if (-not $ff) {
-  if (Test-Path '.\ffmpeg\bin\ffmpeg.exe') { $ff = '.\ffmpeg\bin\ffmpeg.exe' }
+  if     (Test-Path '.\ffmpeg.exe')          { $ff = '.\ffmpeg.exe' }
+  elseif (Test-Path '.\ffmpeg\bin\ffmpeg.exe') { $ff = '.\ffmpeg\bin\ffmpeg.exe' }
   else {
     Write-Host "ffmpeg не найден — скачиваю (~80 МБ, один раз)..."
     Invoke-WebRequest 'https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip' -OutFile 'ffmpeg.zip'
