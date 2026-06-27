@@ -28,7 +28,7 @@ Chapters:
 4:57 How to stop forgetting
 5:30 What it really means
 
-New videos every week. Subscribe → @whyyou
+New videos every week. Subscribe → @whyyouwin
 
 #psychology #doorwayeffect #brain
 ```
