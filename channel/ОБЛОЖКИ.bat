@@ -31,7 +31,7 @@ Write-Host ('ffmpeg: '+$ff)
 Write-Host 'Making avatar 800x800...'
 & $ff -y -i 'https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260627_081759_d1b014aa-5b60-450c-8d64-65fc59ef755c.png' -vf scale=800:800 -update 1 'avatar-800.png'
 Write-Host 'Making banner 2560x1440...'
-& $ff -y -i 'https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260627_081801_0debc036-f15f-4f16-a13a-8f012c5edd18.png' -vf scale=2560:1440 -update 1 'banner-2560x1440.png'
+& $ff -y -i 'https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_102359_a253b5c9-ac2b-4b38-ac7b-4c8b184c17b1.png' -vf scale=2560:1440 -update 1 'banner-2560x1440.png'
 Write-Host 'Making thumbnail 1280x720...'
 & $ff -y -i 'https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_054559_b309f963-340b-47c5-ab41-7159386d8dc8.png' -vf scale=1280:720 -update 1 'thumbnail-1280x720.png'
 Write-Host 'ALL DONE. avatar-800.png, banner-2560x1440.png, thumbnail-1280x720.png are in the folder.'
