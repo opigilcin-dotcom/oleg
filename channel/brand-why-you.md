@@ -1,6 +1,6 @@
-# 🎨 Бренд канала: «Why You Win» (@whyyouwin)
+# 🎨 Бренд канала: «Why You Win» (@whyyou-win)
 
-> Имя @whyyou было занято → выбран **@whyyouwin** (имя канала «Why You Win»).
+> Имя @whyyou было занято → выбран **@whyyou-win** (имя канала «Why You Win»).
 > Баннер оставляем с текстом «WHY YOU» — полный хэндл на шапке не нужен, контент тот же (почему твой мозг…).
 
 ## About (описание канала) — EN
@@ -37,7 +37,7 @@ psychology, brain, science explained, why you, stick figure animation, doodle, h
 
 **Описание (EN):**
 ```
-Why does your brain do that? Every video answers one weird, everyday question about your mind — forgetting why you walked into a room, jolting awake as you fall asleep, feeling time speed up as you get older. Real psychology and neuroscience, explained simply with stick figures in about 8 minutes. New episodes every week. Subscribe → @whyyouwin
+Why does your brain do that? Every video answers one weird, everyday question about your mind — forgetting why you walked into a room, jolting awake as you fall asleep, feeling time speed up as you get older. Real psychology and neuroscience, explained simply with stick figures in about 8 minutes. New episodes every week. Subscribe → @whyyou-win
 ```
 
 Короткий вариант:

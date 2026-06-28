@@ -66,7 +66,7 @@ Chapters:
 6:28 Is it dangerous?
 6:54 What it really means
 
-New videos every week. Subscribe → @whyyouwin
+New videos every week. Subscribe → @whyyou-win
 
 #hypnicjerk #sleep #psychology #neuroscience #sleepparalysis #brainscience #science #sleepscience #humanbrain
 ```

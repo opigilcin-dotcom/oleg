@@ -26,7 +26,7 @@ YouTube-планировщик ставит время в ТВОЁМ часов�
 
 ## 3. Что писать (всё готово в youtube-upload.md)
 - **Заголовок:** Why You Forget Why You Walked Into a Room
-- **Описание:** хук в первой строке + главы (таймкоды) + «Subscribe → @whyyouwin». Главы дают рост по поиску и удержание.
+- **Описание:** хук в первой строке + главы (таймкоды) + «Subscribe → @whyyou-win». Главы дают рост по поиску и удержание.
 - **Теги:** doorway effect, why you forget, psychology, working memory… (полный список в файле)
 - **Хэштеги (3 шт, над заголовком):** #psychology #doorwayeffect #brain
 - **Превью:** V2-C «WHY YOU FORGET?» (1280×720)

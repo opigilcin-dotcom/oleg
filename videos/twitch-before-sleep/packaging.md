@@ -20,3 +20,12 @@ Why You Twitch Right Before You Fall Asleep
   https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_111522_6c39cb4a-bd21-4c60-b779-774c540124a9.png
 
 Рекомендация: **V-D** основное (чистый Zenn-паттерн, максимум интриги), **V-E** на A/B (угол «падение»).
+
+## Превью — ДРУГИЕ ФОРМАТЫ (эксперимент, не белый фон)
+Зачем: чисто белый фон сливается с интерфейсом YouTube на десктопе. Цвет/эмоция помогают «выпрыгнуть» в ленте.
+- **F1 — тёмно-синий фон + белая фигура**: толчок в кровати, красный «?». Сильный контраст, выделяется в ленте.
+  https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_112325_68d772f6-60e8-49e2-a81d-387536013271.png
+- **F2 — крупная эмоция (бежевый фон)**: шокированное лицо стикмена на весь кадр, красный «?». Цепляет эмоцией.
+  https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_112328_a177e0d4-aaa1-4cda-ae57-8141b975c508.png
+- **F3 — жёлтый блок + текст (стиль Paint Explainer)**: слева «WHY YOU JOLT AWAKE», справа фигура.
+  https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_112331_1768704c-99c3-45ae-8b7f-d48ddd586119.png
