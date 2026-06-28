@@ -26,9 +26,10 @@ psychology, brain, science explained, why you, stick figure animation, doodle, h
 Заведи отдельный gmail для спонсоров, добавь в About → Business inquiries.
 
 ## Визуальный гайд (держать едиными)
-- Белый фон, толстый чёрный «кривой» контур, плоские цвета, красный «?» как акцент.
-- Шрифт превью — крупный «рукописный» чёрный, иногда красный.
-- Один голос (Roman), один темп, спокойный объяснитель.
+- **СТИЛЬ: маркер-доска (whiteboard)** — белая доска, чёрный «маркерный» контур с лёгкой текстурой, плоские цвета, ОДИН красный акцент.
+- Стиль-префикс для z_image: `Whiteboard animation style. Plain white whiteboard background. Simple black dry-erase marker stick figures with round heads and dot eyes, clean confident marker strokes with slight marker texture. Flat colors, one red marker accent when needed. No shading, no 3D. Lots of empty board space. 16:9. Hand-written marker text, spelled correctly. SCENE:`
+- Превью — та же доска, крупный маркер-текст, красный «?».
+- Голос: **Xavier** (фирменный с №3). Спокойный объяснитель, один темп.
 
 ---
 
