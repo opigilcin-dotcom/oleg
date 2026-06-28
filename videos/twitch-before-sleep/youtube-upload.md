@@ -43,6 +43,15 @@ Chapters:
 
 New videos every week. Subscribe → @whyyou-win
 
+━━━━━━━━━━━━━━━━━━━━
+SOURCES
+━━━━━━━━━━━━━━━━━━━━
+▸ Loomis, A. L., Harvey, E. N., & Hobart, G. (1937). "Cerebral states during sleep, as studied by human brain potentials." Journal of Experimental Psychology, 21(2). First EEG recording of the stages of falling asleep.
+▸ Saper, C. B., Chou, T. C., & Scammell, T. E. (2001). "The sleep switch: hypothalamic control of sleep and wakefulness." Trends in Neurosciences, 24(12). The flip-flop sleep switch model.
+▸ Oswald, I. (1959). "Sudden bodily jerks on falling asleep." Brain, 82(1). The classic description of hypnic jerks.
+▸ Cheyne, J. A. (2003). "Sleep paralysis and the structure of waking-nightmare hallucinations." Dreaming, 13(3). REM atonia and sleep paralysis.
+▸ Sharpless, B. A., & Barber, J. P. (2011). "Lifetime prevalence rates of sleep paralysis: A systematic review." Sleep Medicine Reviews, 15(5).
+
 #hypnicjerk #sleep #psychology #neuroscience #sleepparalysis #brainscience #science #sleepscience #humanbrain
 ```
 
