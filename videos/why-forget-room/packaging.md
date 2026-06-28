@@ -58,3 +58,15 @@ Style locked for all three: crude childlike MS-Paint doodle, white background, t
 - **Test 1 (thumbnail):** A (WHY YOU FORGET?) vs C (WHY AM I HERE?) against the same #1 title. A = topic clarity; C = raw relatability/humor. See which emotional angle wins clicks.
 - **Test 2 (title):** #1 (relatable) vs #2 "Your Brain Deletes Memories at Every Doorway" (high-stakes verb), keeping Thumbnail A constant.
 - Pair Thumbnail B (THE DOORWAY EFFECT) only with the term-led title/RU #3 if you want the search/SEO play, since both name the concept.
+
+---
+
+## Превью v2 — по анализу конкурентов (channel/competitor-thumbnail-analysis.md)
+Паттерн победителей: flat белый фон + ОДНА кривая фигура + 0–3 слова + один красный акцент.
+
+- **V2-A (рекомендую) — без текста** «Frozen in the Doorway»: стикмен шагает сквозь дверь, рот «O», красный «?», максимум белого.
+  https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_054554_5e36aedb-77d0-4ef1-a3cc-0d8645f3fccd.png
+- **V2-B — одно слово «WHY?»**: то же + короткое слово справа внизу.
+  https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_054556_58866ac7-2fbb-49d3-9d12-3f5b0a63a030.png
+- **V2-C — «WHY YOU FORGET?»**: текстовая версия (3 слова) для A/B-теста.
+  https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_054559_b309f963-340b-47c5-ab41-7159386d8dc8.png
