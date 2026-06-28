@@ -13,13 +13,22 @@ Why You Twitch Right Before You Fall Asleep
 Выбранный концепт впишем после рендера (V-A без текста / V-B «WHY YOU JOLT AWAKE» / V-C «FALLING?»).
 Файл после ОБЛОЖКИ-скрипта: `thumbnail-1280x720.png`.
 
-## Описание (EN) — вставить целиком
+## Описание (EN) — по структуре Zenn (хук → поворот → под-темы → философия → CTA → хэштеги)
 ```
-You're almost asleep — and suddenly your whole body jerks awake, like you missed a step. Why?
+You're almost asleep — and your whole body jerks awake, like you missed a step. Why?
 
-It's called a hypnic jerk, and about 7 out of 10 people feel it. Falling asleep isn't one smooth slide. It's a handover between two systems fighting for control of your body — and right at the edge, the switch can flicker.
+Most people think it's a glitch, or a sign something's wrong. The truth is much stranger: it's a handover between two systems fighting for control of your body, and at the edge, the switch can flicker.
 
-In this video: the 1937 experiment that first recorded the brain falling asleep, the "flip-flop" sleep switch, the ancient falling-from-a-tree reflex, why your brain invents the falling dream after the twitch, sleep paralysis as the mirror image, and how to make your jolts smaller.
+In this video we unpack the hypnic jerk:
+
+The Sleep Switch: why your brain doesn't fade into sleep — it flips a switch that can spark on the way down.
+The Tree Reflex: the ancient survival instinct that mistakes stillness for falling.
+The Falling Dream: why your brain invents the fall AFTER the twitch, not before.
+Sleep Paralysis: the mirror image — when the same handoff fails the opposite way.
+
+If the fall was never real, and your body catches you every single night without asking — how much of "falling asleep" are you actually in control of?
+
+What's the worst jolt you've ever had right as you drifted off? Tell me in the comments.
 
 Chapters:
 0:00 The jolt that wakes you
@@ -34,12 +43,12 @@ Chapters:
 
 New videos every week. Subscribe → @whyyouwin
 
-#hypnicjerk #sleep #psychology
+#hypnicjerk #sleep #psychology #neuroscience #sleepparalysis #brainscience #science #sleepscience #humanbrain
 ```
 
-## Теги
+## Теги (по 5-типной формуле Zenn: явление + запрос + ниша + имена учёных + концепты)
 ```
-hypnic jerk, why you twitch in your sleep, why you jolt awake, sleep starts, falling sensation sleep, sleep paralysis, why we twitch falling asleep, hypnagogic, sleep science, psychology explained, stick figure, doodle explainer, brain explained, why do i jerk awake, REM atonia
+hypnic jerk, hypnagogic jerk, why do we twitch before falling asleep, why you jolt awake, sleep starts, sleep twitching, falling sensation when falling asleep, sleep paralysis, REM atonia, why your body jerks in sleep, hypnic jerk explained, Alfred Lee Loomis, Clifford Saper, sleep science, neuroscience, psychology, why we dream of falling, sleep stages, brain explained
 ```
 
 ## Настройки при загрузке
