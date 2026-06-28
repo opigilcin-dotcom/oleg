@@ -29,3 +29,13 @@ Why You Twitch Right Before You Fall Asleep
   https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_112328_a177e0d4-aaa1-4cda-ae57-8141b975c508.png
 - **F3 — жёлтый блок + текст (стиль Paint Explainer)**: слева «WHY YOU JOLT AWAKE», справа фигура.
   https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_112331_1768704c-99c3-45ae-8b7f-d48ddd586119.png
+
+## Превью — стиль «чистый мультик» (бежевый фон, выразительное лицо — по референсу заказчика)
+- **C1 (рекомендую) — крупное шок-лицо + кровать**: огромные глаза, открытый рот, капля пота, 2 красных «?».
+  https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_164112_b06d34a5-b326-4954-8c3e-e526648d8d09.png
+- **C2 — подбрасывает в кровати**: резко сел, руки врозь, шок, красный «!».
+  https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_164114_e4d2c44f-11a6-4beb-a335-bc48f26319fa.png
+- **C3 — испуганное лицо вверх + луна + кровать**, красные «!?».
+  https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_164117_ec87056a-838b-421b-abc3-95a939d23dd2.png
+
+ЭТОТ СТИЛЬ (чистый мультик, бежевый фон, крупная эмоция) — кандидат на ЕДИНЫЙ стиль превью канала (дороже и эмоциональнее грубого MS-Paint). Рекомендация №2: **C1**.
