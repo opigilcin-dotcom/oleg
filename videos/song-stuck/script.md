@@ -238,44 +238,113 @@
 [5:33] And a groove, once cut, is very hard to fill back in.
 (IMAGE: глубокая канавка на виниле, не зарастает)
 
-[5:37] So if an earworm will not leave, you now have real tools.
+[5:37] And someone figured out how to use that groove against you.
+(IMAGE: тень-человек втыкает ноту-крючок в чужую голову)
+
+[5:41] Think about the last advert that would not leave your head.
+(IMAGE: стикмен у телевизора, из экрана вылетает нота)
+
+[5:45] The jingle for a fast food chain. A phone number sung in a tune.
+(IMAGE: бургер с нотами; телефонный номер в виде нот)
+
+[5:50] That is not a coincidence. An entire industry engineers earworms on purpose.
+(IMAGE: завод-конвейер «JINGLES INC.» штампует нотные крючки)
+
+[5:56] Advertisers take everything we talked about. The simple shape, the odd jump, the unfinished hook.
+(IMAGE: рецепт «STICKY» собирают в короткий ролик)
+
+[6:02] And pack it into seven seconds.
+(IMAGE: секундомер на 7 сек, внутри нота-крючок)
+
+[6:05] So a product rides into your memory on a melody you cannot shake.
+(IMAGE: коробка-товар едет верхом на нотной волне в голову)
+
+[6:10] They are not trying to make you like the song. They want you unable to forget it.
+(IMAGE: сердечко перечёркнуто, вместо него «не забудешь» прилипло)
+
+[6:15] A brand you cannot stop humming is a brand you remember in the shop.
+(IMAGE: стикмен в магазине напевает, тянется к знакомому бренду)
+
+[6:20] The most powerful adverts in history are not the clever ones. They are the ones that carved a groove.
+(IMAGE: канавка-бренд прорезана глубоко в пластинке памяти)
+
+[6:26] You can mute a screen and skip an ad.
+(IMAGE: стикмен жмёт «SKIP» и «MUTE»)
+
+[6:29] But you cannot skip the song once it is already looping inside your skull.
+(IMAGE: кнопка «SKIP» перечёркнута, нота крутится в голове)
+
+[6:34] One unfinished hook at a time.
+(IMAGE: ряд крючков-нот тянется в голову)
+
+[6:37] And it does not hit everyone the same.
+(IMAGE: три стикмена: у одного буря нот, у другого одна, у третьего пусто)
+
+[6:40] If your head is a jukebox that never stops, you are not imagining it.
+(IMAGE: голова-музыкальный автомат, лампочки, ноты)
+
+[6:44] Musicians and heavy music listeners get more earworms.
+(IMAGE: стикмен с гитарой и наушниками, над головой много нот)
+
+[6:48] Their brains hold more melodies ready to loop.
+(IMAGE: полка в голове, полная нотных катушек)
+
+[6:52] People whose minds lock onto a thought and circle it get longer, stronger ones.
+(IMAGE: тревожный стикмен, мысль крутится по кругу плюс нота)
+
+[6:58] The same machinery that loops a worry will happily loop a song.
+(IMAGE: одна петля, на ней то тревога, то нота)
+
+[7:03] And a lucky few barely get them at all.
+(IMAGE: спокойный стикмен, над головой тишина, галочка)
+
+[7:06] The difference is not how much you love music.
+(IMAGE: сердечко-музыка перечёркнуто как причина)
+
+[7:10] It is how sticky your brain is, and how often you leave it idle.
+(IMAGE: липкий мозг и пустые «простои» с нотой)
+
+[7:15] The more silence you give your mind, the more it reaches for a tune to fill it.
+(IMAGE: тишина-пустота, мозг тянется за нотой)
+
+[7:20] So if an earworm will not leave, you now have real tools.
 (IMAGE: стикмен с ящиком инструментов «vs EARWORM»)
 
-[5:41] Finish the song, and close the loop.
+[7:24] Finish the song, and close the loop.
 (IMAGE: песня доиграна до конца, петля замкнулась, галочка)
 
-[5:44] Chew gum — a 2015 study found it jams the part of your brain that plays the tune.
+[7:28] Chew gum — a 2015 study found it jams the part of your brain that plays the tune.
 (IMAGE: стикмен жуёт жвачку, нота глохнет, подпись «2015»)
 
-[5:50] Or hand your mind a different task. Hard enough to need it, easy enough to keep.
+[7:34] Or hand your mind a different task. Hard enough to need it, easy enough to keep.
 (IMAGE: мозг берёт головоломку средней сложности, нота уходит)
 
-[5:56] You are not trying to force the song out.
+[7:40] You are not trying to force the song out.
 (IMAGE: стикмен толкает ноту силой — перечёркнуто)
 
-[5:59] You are giving your brain the one thing it was asking for the whole time. An ending.
+[7:43] You are giving your brain the one thing it was asking for the whole time. An ending.
 (IMAGE: мозг получает «THE END», выдыхает спокойно)
 
-[6:04] So the next time a song will not stop, you will know exactly what is happening.
+[7:48] So the next time a song will not stop, you will know exactly what is happening.
 (IMAGE: стикмен с кружащей нотой, над ним загорается понимание)
 
-[6:09] It was never stuck.
+[7:53] It was never stuck.
 (IMAGE: слово «STUCK» перечёркнуто)
 
-[6:11] Your brain caught an unfinished loop and could not stand to leave it open.
+[7:55] Your brain caught an unfinished loop and could not stand to leave it open.
 (IMAGE: мозг держит разомкнутую петлю, не отпускает)
 
-[6:16] It was not broken. It was doing the very thing that lets you remember anything at all.
+[8:00] It was not broken. It was doing the very thing that lets you remember anything at all.
 (IMAGE: мозг с галочкой, вокруг приклеенные важные воспоминания)
 
-[6:22] The song was never the problem.
+[8:06] The song was never the problem.
 (IMAGE: нота с нимбом «невиновна»)
 
-[6:25] It was just the sound of your mind, refusing to leave a story half-told.
+[8:09] It was just the sound of your mind, refusing to leave a story half-told.
 (IMAGE: открытая книга с оборванной последней строкой, нота сверху)
 
-[6:31] Now you know. Hum the last line. Let it finish.
+[8:15] Now you know. Hum the last line. Let it finish.
 (IMAGE: стикмен напевает последнюю строку, нота-петля замыкается)
 
-[6:36] And your brain will finally set it down.
+[8:20] And your brain will finally set it down.
 (IMAGE: мозг бережно кладёт ноту на полку, спокойствие, затемнение)
