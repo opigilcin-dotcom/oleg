@@ -76,3 +76,35 @@ New videos every week. Subscribe → @whyyou-win
 - **Описание:** не пустое — хук, поворот «не то, что ты думаешь», под-темы с подзаголовками, философский вопрос, CTA в комменты, 8–9 хэштегов.
 - **Субтитры не обязательны** (Zenn без них), но мы можем добавить — лишним не будет.
 - Category: **Education**.
+
+---
+
+## КЕЙС 3 — Zenn «The Calhoun Effect» (3.79M, 98K лайков = 2.58% — лучшая вовлечённость)
+Видео, которое понравилось заказчику. Самый сильный кейс упаковки.
+
+**Заголовок:** «The Calhoun Effect» — формула «The ___ Effect» как БРЕНД-ЗАГАДКА. Реальная тема — Universe 25 / mouse utopia, но названо именем учёного, чтобы звучало как секрет.
+
+**Длина:** 8:33. Category: Education. Субтитров нет.
+
+**Теги (18):** universe 25 (+5 вариаций), mouse utopia, john calhoun experiment, behavioral sink, the beautiful ones mice, overpopulation experiment, psychology documentary, sociology, why utopia fails, dark history, human behavior, societal collapse, universe 25 documentary.
+→ Тэги = ПОИСКОВЫЕ слова (universe 25, mouse utopia), НЕ бренд-заголовок. Заголовок-загадка + теги-поисковики = охват и из «рекомендаций», и из поиска.
+
+**ОПИСАНИЕ — мастер-класс (берём как эталон):**
+1. **Хук = ИСТОРИЯ с датами и тёмным поворотом** (не вопрос): «In 1968, scientist John Calhoun built a literal paradise for mice… Five years later, every single one of them was dead.»
+2. Название явления: «Universe 25, one of the most disturbing experiments…»
+3. **Поворот** «most people assume X… but the real reason is much darker»
+4. **ЗЕРКАЛО НА ЗРИТЕЛЯ** (драйвер вовлечённости): «a terrifying mirror up to modern human society… are we heading toward our own Universe 25?»
+5. Под-темы с интригующими терминами (behavioral sink, the beautiful ones)
+6. **Вопрос-приманка в комменты** (спорный, открытый): «do you think humanity is falling into the same trap?»
+7. Like + subscribe (мягко)
+8. 🆕 **БОЛЬШОЙ блок ИСТОЧНИКОВ** — реальные академические ссылки (Calhoun 1973, 1962, 1971; Adams & Ramsden 2024; Ramsden 2009…). Доверие + сигнал алгоритму «качество». ПОЧТИ НИКТО из faceless так не делает.
+9. 5 хэштегов.
+
+**Вовлечённость 2.58%** (vs Stickly 1.14%, baby 1.85%) — за счёт «зеркала на зрителя» + спорного вопроса.
+
+### ВНЕДРИТЬ ВО ВСЕ НАШИ ВИДЕО:
+- **Хук-описание можно делать историей с датами**, не только вопросом.
+- **Добавлять «зеркало на зрителя»** — большой вопрос про жизнь самого зрителя.
+- **ДОБАВЛЯТЬ блок SOURCES** с 3–5 реальными статьями (доверие + алгоритм + защита от «дезинформации»).
+- **Вопрос-приманка в комменты** — открытый, спорный, чтобы спорили.
+- Вариант заголовка «The ___ Effect» как бренд-загадка на A/B.

@@ -4,7 +4,7 @@
 ```
 Why You Can't Get a Song Out of Your Head
 ```
-Запасные (A/B): «Why a Song Gets Stuck in Your Head» · «Why Your Brain Replays the Same Song»
+Запасные (A/B): «Why a Song Gets Stuck in Your Head» · «The Earworm Effect» (бренд-загадка в стиле Zenn «The Calhoun Effect»)
 
 ## Превью (whiteboard, выбрать после рендера)
 W-A (без текста, стикмен + нота на красной петле + «?») / W-B («WHY WON'T IT STOP?») / W-C (голова с нотой внутри).
@@ -24,9 +24,9 @@ The Loop: why your brain replays the same five seconds, chasing a finish line th
 The Jingle Weapon: how an entire industry engineers earworms on purpose to sell you things.
 The Idle Mind: why an earworm is really a window into what your brain does all day without telling you.
 
-If your brain plays a song you didn't choose and can't stop — how much of your own mind are you actually in charge of?
+Here's the unsettling part: this is your brain playing a song you never chose, on a loop you can't switch off. So how much of your own mind are you actually in charge of?
 
-What song is stuck in your head right now? Drop it in the comments.
+What song is stuck in your head right now? Drop it in the comments — let's see how many we can give each other.
 
 Chapters:
 0:00 The song that won't stop
@@ -41,6 +41,15 @@ Chapters:
 7:48 What it really means
 
 New videos every week. Subscribe → @whyyou-win
+
+━━━━━━━━━━━━━━━━━━━━
+SOURCES
+━━━━━━━━━━━━━━━━━━━━
+▸ Zeigarnik, B. (1927). "Über das Behalten von erledigten und unerledigten Handlungen" (On finished and unfinished tasks). The original interrupted-task memory effect.
+▸ Jakubowski, K., Finkel, S., Stewart, L., & Müllensiefen, D. (2017). "Dissecting an Earworm: Melodic Features and Song Popularity Predict Involuntary Musical Imagery." Psychology of Aesthetics, Creativity, and the Arts, 11(2). The recipe of a sticky song.
+▸ Beaman, C. P., Powell, K., & Rapley, E. (2015). "Want to block earworms from conscious awareness? B(u)y gum!" Quarterly Journal of Experimental Psychology, 68(6). The chewing-gum finding.
+▸ Liikkanen, L. A. (2012). "Involuntary music among normal population and clinical cases." Prevalence of earworms (~90% weekly).
+▸ Hyman, I. E. et al. (2013). "Going Gaga: Investigating, Creating, and Manipulating the Song Stuck in My Head." Applied Cognitive Psychology. Earworms and cognitive load.
 
 #earworm #psychology #music #neuroscience #brain #zeigarnik #musicpsychology #science #brainscience
 ```
