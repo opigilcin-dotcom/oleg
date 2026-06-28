@@ -6,8 +6,9 @@ Why You Forget Why You Walked Into a Room
 ```
 Запасные: «Why You Walk Into a Room and Forget Why» · «The Doorway Effect: Why You Forget Instantly»
 
-## Превью
-Вариант **A** — стикмен в дверях + красный «?» + «WHY YOU FORGET?» (см. packaging.md).
+## Превью (выбрано)
+**V2-C** — стикмен в дверях + красный «?» + текст «WHY YOU FORGET?» (по анализу конкурентов, см. competitor-thumbnail-analysis.md).
+Файл после `ОБЛОЖКИ.bat`: `thumbnail-1280x720.png`. Запасной для A/B-теста: V2-A (без текста).
 
 ## Описание (EN) — вставить целиком
 ```
