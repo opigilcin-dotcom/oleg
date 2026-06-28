@@ -29,3 +29,18 @@ psychology, brain, science explained, why you, stick figure animation, doodle, h
 - Белый фон, толстый чёрный «кривой» контур, плоские цвета, красный «?» как акцент.
 - Шрифт превью — крупный «рукописный» чёрный, иногда красный.
 - Один голос (Roman), один темп, спокойный объяснитель.
+
+---
+
+## Плейлист «Your Brain»
+**Название:** Your Brain, Explained
+
+**Описание (EN):**
+```
+Why does your brain do that? Every video answers one weird, everyday question about your mind — forgetting why you walked into a room, jolting awake as you fall asleep, feeling time speed up as you get older. Real psychology and neuroscience, explained simply with stick figures in about 8 minutes. New episodes every week. Subscribe → @whyyouwin
+```
+
+Короткий вариант:
+```
+The weird things your brain does every day — explained simply with stick figures. Forgetting, time, sleep, memory, and more. New videos weekly.
+```
