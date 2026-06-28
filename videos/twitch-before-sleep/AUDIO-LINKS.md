@@ -1,15 +1,19 @@
-# 🎙️ Озвучка №2 «Why You Twitch Before You Fall Asleep» — ссылки
+# 🎙️ Озвучка №2 «Why You Twitch Before You Fall Asleep» — ссылки (версия 7:25)
 
-Голос: **Roman** (ElevenLabs preset `7e63ac18-5fcd-4aba-8078-a86d4e11c127`). 6 кусков, итого ≈ 4:46.
+Голос: **Roman** (ElevenLabs preset `7e63ac18-5fcd-4aba-8078-a86d4e11c127`). 9 кусков, итого ≈ 7:25.
+Склейка СТРОГО в этом порядке (новые секции вставлены между старыми):
 База CDN: `https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/`
 
-| # | Длит. | Ссылка |
-|---|-------|--------|
-| EN-1 | 0:37 | https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_060347_ba64cd3e-6eb5-4ba5-9f60-69c7a2eaf1c3.mp3 |
-| EN-2 | 0:59 | https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_060351_c0460187-e804-4bf7-a346-d48f7ffc994d.mp3 |
-| EN-3 | 0:55 | https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_060421_b9ac8c23-6df8-4429-bdef-aff154a417eb.mp3 |
-| EN-4 | 0:50 | https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_060425_a48c5da3-66ae-4279-abc9-0728f4844af4.mp3 |
-| EN-5 | 0:53 | https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_060451_91f8506a-9601-4c8d-9c2e-d9e58e6e76ba.mp3 |
-| EN-6 | 0:31 | https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260628_060454_63c0eb7e-34e5-4983-8f22-6698ce4936f9.mp3 |
+| Порядок | Кусок | Длит. | Файл |
+|---------|-------|-------|------|
+| 1 | EN-1 (хук+название) | 0:37 | hf_20260628_060347_ba64cd3e-6eb5-4ba5-9f60-69c7a2eaf1c3.mp3 |
+| 2 | EN-2 (Лумис+механизм) | 0:59 | hf_20260628_060351_c0460187-e804-4bf7-a346-d48f7ffc994d.mp3 |
+| 3 | EN-3 (дерево+сон) | 0:55 | hf_20260628_060421_b9ac8c23-6df8-4429-bdef-aff154a417eb.mp3 |
+| 4 | **NEW-A (переключатель сна)** | 1:04 | hf_20260628_061034_a23bd93e-afa8-4e55-82ac-e7be37a62c09.mp3 |
+| 5 | EN-4 (когда сильнее+переворот) | 0:50 | hf_20260628_060425_a48c5da3-66ae-4279-abc9-0728f4844af4.mp3 |
+| 6 | **NEW-B (сонный паралич)** | 1:09 | hf_20260628_061037_47598028-afb3-41e4-8411-ba30b98da2ff.mp3 |
+| 7 | EN-5 (страх падения+лайфхак) | 0:53 | hf_20260628_060451_91f8506a-9601-4c8d-9c2e-d9e58e6e76ba.mp3 |
+| 8 | **NEW-C (опасно ли это)** | 0:26 | hf_20260628_061056_75d18113-0b89-4d1e-af6c-d10f838158f4.mp3 |
+| 9 | EN-6 (закрытие) | 0:31 | hf_20260628_060454_63c0eb7e-34e5-4983-8f22-6698ce4936f9.mp3 |
 
-Склейка встык в порядке EN-1…EN-6 (длительности кадров под голос посчитаем в build-скрипте, общая ≈ 286 сек).
+Итого ≈ 445 сек (7:25).
