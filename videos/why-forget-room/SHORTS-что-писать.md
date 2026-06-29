@@ -11,7 +11,7 @@
 1. **Текст на экране в конце** (последние 3 сек): `Full video on the channel ☝️` + стрелка вверх к аватарке.
 2. **Голос в конце:** "It has a name — full breakdown on the channel."
 3. **Закреплённый коммент** (пишешь сам сразу после заливки): ссылка на длинное:
-   `Full video → youtu.be/XXXXX 🧠`
+   `Full video → youtu.be/frWMqdSU56M 🧠`
 4. **Описание Short** — первая строка ведёт на длинное (см. ниже у каждого).
 5. **Related video (важно!):** в YouTube Studio у Short есть поле **«Related video»** — привяжи туда длинное №1. Это официальная кнопка-ссылка под Short.
 
@@ -40,7 +40,7 @@ Your brain literally drops the thought the second you cross a doorway. Here's wh
 
 **Закреплённый коммент (пишешь сам):**
 ```
-Full video here → [ссылка на длинное №1] 🧠 Be honest — when did you last forget why you walked into a room?
+Full video here → youtu.be/frWMqdSU56M 🧠 Be honest — when did you last forget why you walked into a room?
 ```
 
 **Related video:** длинное №1.
@@ -67,7 +67,7 @@ Four. That's all your working memory holds at once — and crossing a doorway is
 
 **Закреплённый коммент:**
 ```
-Full video → [ссылка на длинное №1]. How many tabs are open in YOUR head right now? 😅
+Full video → youtu.be/frWMqdSU56M. How many tabs are open in YOUR head right now? 😅
 ```
 
 **Related video:** длинное №1.
@@ -94,7 +94,7 @@ Walk back to the room you started in — standing in the old spot hands the thou
 
 **Закреплённый коммент:**
 ```
-Full video → [ссылка на длинное №1]. Try the walk-back trick tonight and tell me if it worked 👇
+Full video → youtu.be/frWMqdSU56M. Try the walk-back trick tonight and tell me if it worked 👇
 ```
 
 **Related video:** длинное №1.
