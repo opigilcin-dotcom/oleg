@@ -1,7 +1,7 @@
 # EVERY GLITCH IN YOUR BRAIN — clinical-style script (видео №4, компиляция)
 
 Канал: Why You Win (@whyyou-win). Стиль: **Clinical** (см. channel/style-calhoun-clinical.md) — бледно-бежевый фон, чёрный контур, приглушённая палитра, ОДИН красный акцент, холодно-тревожный тон. Голос: **Xavier**.
-Хронометраж ~8:30. Формат: компиляция «реальных глюков мозга» по эталону Brainosophy «Every Reality Glitch You Can't Explain» (1.58M/4 нед) + упаковка Zenn «Calhoun» (тёмный хук → зеркало → SOURCES).
+Хронометраж ~8:45. Формат: компиляция «реальных глюков мозга» по эталону Brainosophy «Every Reality Glitch You Can't Explain» (1.58M/4 нед) + упаковка Zenn «Calhoun» (тёмный хук → зеркало → SOURCES).
 6 глюков по нарастанию: Doorway → Spotlight → Mere Exposure → Hypnic Jerk → Earworm → Déjà vu. Рамка: мозг показывает тебе не реальность, а монтаж. Видео-хаб: внутри отсылки к нашим №1/№2/№3.
 
 Красный акцент — сквозной мотив: маленькая красная точка/линия = «шов», где монтаж виден. Появляется в каждом блоке и в финале.
@@ -10,13 +10,13 @@
 
 ## ХОЛОДНЫЙ ОТКРЫВАЮЩИЙ ХУК (0:00–0:42)
 
-[0:00] Right now, you believe you are seeing the world as it is.
+[0:00] Right now you think you are awake, alert, and seeing the room around you exactly as it is.
 (IMAGE: одинокий стикмен стоит по центру пустой бежевой комнаты, смотрит вперёд)
 
-[0:05] You are not. You are watching a recording your brain made a fraction of a second ago.
+[0:06] You are wrong on all three. You are half-blind, a beat behind, and watching a recording your brain made a fraction of a second ago.
 (IMAGE: тот же стикмен, перед глазами тонкий экран-плёнка, маленькая красная точка в углу кадра)
 
-[0:11] And to make that recording smooth, your brain edits things out. Quietly. Constantly.
+[0:13] And to keep that recording smooth, your brain cuts things out. Quietly. Constantly. Without telling you.
 (IMAGE: киноплёнка с вырезанными кадрами, ножницы, один кадр выпадает)
 
 [0:17] Most of the time, you never notice the cut.
@@ -257,40 +257,43 @@
 
 ## ТЁМНЫЙ ФИНАЛ + ЗЕРКАЛО + ВОПРОС-ПРИМАНКА (7:15–8:30)
 
-[7:15] None of these are your brain failing. Every one of them is your brain working exactly as designed.
-(IMAGE: мозг-машина с галочкой «working», вокруг 6 красных точек)
+[7:15] Now here is where almost everyone gets it wrong.
+(IMAGE: толпа стикменов смотрит в одну сторону, один красный стикмен повёрнут в другую)
 
-[7:22] It forgets at doorways to stay efficient. It invents an audience to keep you in line.
-(IMAGE: дверь + прожектор, две иконки)
+[7:19] Most people hear all this and think their brain is glitching. Broken. Unreliable. Something to fix.
+(IMAGE: мозг с трещиной и красной табличкой «BROKEN», вокруг тревожные «?»)
 
-[7:28] It installs your taste, rewrites your sleep, loops your attention, and back-dates your memories.
-(IMAGE: четыре иконки в ряд, у каждой красная метка)
+[7:26] The truth is the exact opposite. None of these are your brain failing. Every one is your brain working exactly as designed.
+(IMAGE: та же трещина стирается, табличка меняется на «WORKING AS DESIGNED», галочка)
 
-[7:35] All of it without asking you. All of it to keep the recording smooth.
-(IMAGE: ровная плёнка реальности, красные швы скрыты под ней)
+[7:33] It forgets at doorways to stay fast. It invents an audience to keep you in line. It installs your taste, rewrites your sleep, loops your attention, and back-dates your memories.
+(IMAGE: 6 иконок-эффектов в ряд, у каждой красная метка-шов)
 
-[7:41] Because here is the part that should keep you up tonight.
+[7:42] And here is the part almost nobody says out loud.
 (IMAGE: тёмная комната, один стикмен, тонкая красная линия на полу)
 
-[7:45] You never see reality directly. You see your brain's best guess about reality, a beat late, heavily edited.
-(IMAGE: стикмен смотрит на экран, на экране «render» комнаты, а не сама комната)
+[7:46] Your brain had a choice to make millions of years ago. Be slow and accurate, or be fast and good enough.
+(IMAGE: весы: «SLOW + ACCURATE» vs «FAST + good enough», красная стрелка на второе)
 
-[7:53] A controlled hallucination, tuned just well enough to keep you alive.
-(IMAGE: комната с лёгким красным контуром «render», стикмен внутри)
+[7:53] A slow, perfectly accurate brain gets you killed. So evolution chose speed, and paid for it with these tiny errors.
+(IMAGE: стикмен-предок реагирует мгновенно на тень, рядом «too slow» перечёркнуто)
 
-[7:59] The glitches are not the system breaking. They are the only moments you get to see the system at all.
+[8:00] The glitches are not the price of a broken brain. They are the price of a brain fast enough to keep you alive.
+(IMAGE: красный «шов» с ярлыком «the price of being fast»)
+
+[8:07] You never see reality directly. You see your brain's best guess about it, a beat late, heavily edited. A controlled hallucination, tuned just well enough to survive.
+(IMAGE: стикмен смотрит на экран-«render» комнаты, лёгкий красный контур «render»)
+
+[8:16] The glitches are not the system breaking. They are the only moments you ever get to see the system at all.
 (IMAGE: красный шов на плёнке подсвечен как единственное «окно»)
 
-[8:06] So the real question is not why your brain glitches.
-(IMAGE: перечёркнутый вопрос «why glitch?»)
+[8:22] So the real question is not why your brain glitches. It is how much of today you actually saw, and how much your brain quietly filled in for you.
+(IMAGE: полоса-день, большая часть закрашена бежевым «filled in», тонкая красная — «actually seen»)
 
-[8:10] It is how much of today you actually saw, and how much your brain quietly filled in for you.
-(IMAGE: один день-полоса, большая часть закрашена бежевым «filled in», тонкая красная — «actually seen»)
-
-[8:18] Which of these six have you felt? And which one just happened to you while watching this?
+[8:31] Which of these six have you felt? And which one just happened to you while watching this?
 (IMAGE: 6 иконок, стрелка вниз к комментариям, «👇»)
 
-[8:25] Tell me below. And if your brain edited this video while you watched, that was glitch number seven.
+[8:37] Tell me below. And if your brain edited part of this video while you watched, without you noticing, that was glitch number seven.
 (IMAGE: киноплёнка обрывается на красном шве, затемнение)
 
 ---
