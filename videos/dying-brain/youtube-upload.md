@@ -10,8 +10,8 @@ What Happens in Your Brain When You Die
 - «The Last 7 Minutes» (бренд-загадка в духе Zenn «The Calhoun Effect»)
 - «Your Brain's Final 7 Minutes» · «The 7 Minutes Every Human Will Experience»
 
-## Превью
-Crop крупного кадра: профиль головы стикмена, внутри последний ярко-красный нейронный всплеск + прямая красная линия ЭКГ. Текст (накладываем в монтаже): «THE LAST 7 MINUTES» или «YOUR BRAIN AT DEATH». 1280×720, бежевый Clinical-фон.
+## Превью (ВЫБРАНО)
+**Вариант A** (`ab41d349`) — профиль головы + красный нейронный всплеск + прямая ЭКГ, справа текст «THE LAST 7 MINUTES» («7 MINUTES» красным). Текст уже встроен (nano_banana). Файл после `ОБЛОЖКА-смерть.bat`: `thumbnail-1280x720.png`. A/B-запас: вариант B «YOU WON'T REMEMBER THIS».
 
 ## Описание (EN) — по структуре Calhoun (тёмный хук → твист → под-темы → зеркало → CTA → SOURCES → хэштеги)
 ```
