@@ -11,10 +11,20 @@
 6. **Движение:** простые пан/зум/слайд. Без сложной 3D-камеры и параллакса.
 7. **Тон:** клинический, отстранённый, образовательный — и подспудно тревожный за счёт контраста простого рисунка и тёмной темы. ← ВОТ ЭТО и есть «секрет» Calhoun.
 
-## 🔑 СТИЛЬ-ПРЕФИКС для z_image / nano_banana (вставлять перед каждой сценой)
+## 🔑 СТИЛЬ-ПРЕФИКС v1 (пустой фон, для мрачных тем — смерть/страх)
 ```
-Minimalist 2D hand-drawn explainer illustration. Plain pale beige background (#EFE7D6). Simple figures with thick uniform black outlines and flat fills, no shading, no gradients, no 3D. Muted clinical palette: beige, warm gray, soft brown, bone white. ONE single red accent only (one object, line, or word). Lots of empty negative space, centered or simple isometric composition. Clinical, detached, subtly unsettling mood. 16:9. When text is needed, bold hand-lettered sans-serif, spelled correctly, placed top-right or centered. SCENE:
+Minimalist 2D hand-drawn explainer illustration. Plain pale beige background (#EFE7D6). Simple figures with thick uniform black outlines and flat fills, no shading, no gradients, no 3D. Muted clinical palette: beige, warm gray, soft brown, bone white. ONE single red accent only (one object, line, or word). Lots of empty negative space, centered or simple isometric composition. Clinical, detached, subtly unsettling mood. 16:9. No text, no letters, no numbers anywhere. SCENE:
 ```
+
+## 🔑 СТИЛЬ-ПРЕФИКС v2 — Clinical + ДЕТАЛЬНЫЕ ФОНЫ (новый дефолт с видео №5)
+Тот же Clinical (та же палитра, чёрный контур, ОДИН красный акцент, тот же простой узнаваемый персонаж), НО:
+- вместо пустого негативного пространства — **живое детальное окружение** (комната с предметами, улица, кафе, древний костёр, ванная с зеркалом, «внутри уха» и т.д.);
+- **фон МЕНЯЕТСЯ каждую сцену** — глазу есть за что цепляться (это держит удержание на длинных видео);
+- лёгкая мягкая тень допускается ради читаемости, но без 3D-реализма.
+```
+Clean 2D hand-drawn explainer illustration. Pale beige base palette (#EFE7D6), thick uniform black outlines, flat fills with soft light shading. Muted clinical palette: beige, warm gray, soft brown, bone white. ONE single red accent only. Same simple consistent stick-figure character with round head and dot eyes across all frames. A DETAILED, characterful environment filling the scene (props, furniture, setting) that fits the moment; vary the setting every scene. Subtly unsettling, story-like mood. 16:9. No text, no letters, no numbers anywhere. SCENE:
+```
+**Правило:** персонаж и палитра постоянны → узнаваемость; фон детальный и каждый раз новый → интерес. Красный по-прежнему один на кадр (звуковая волна / ЭКГ / нить — смотря по теме).
 
 ## Отличия от старого whiteboard-префикса (что именно «поменяли»)
 | | Старый whiteboard | Новый Clinical |
