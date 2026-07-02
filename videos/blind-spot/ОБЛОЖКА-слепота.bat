@@ -10,8 +10,8 @@ $dir = Split-Path -Parent $MyInvocation.MyCommand.Path
 if(-not $dir){ $dir = (Get-Location).Path }
 Set-Location -LiteralPath $dir
 Write-Host ('Folder: '+$dir)
-$src = 'https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260702_053148_577a157f-a2bd-4a30-bc4a-05bf3afbe4bb.png'
-Write-Host 'Downloading thumbnail (A - GONE, disappearing red dot)...'
+$src = 'https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260702_060143_a204fdcb-91fc-44d6-a62c-c7a74bc24bb9.png'
+Write-Host 'Downloading thumbnail (H - NO SIGNAL, TV-static glitch across the eyes)...'
 & curl.exe -L -o 'cover-src.png' $src
 if(-not (Test-Path '.\cover-src.png')){ Write-Host 'Download failed. Check internet and run again.'; return }
 $ff=$null
