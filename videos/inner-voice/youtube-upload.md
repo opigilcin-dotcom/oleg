@@ -1,8 +1,10 @@
 # 📤 YouTube — карточка №6 «The Voice in Your Head Isn't You»
 
-Хронометраж ~11:00. Стиль Clinical v2. Голос Cillian.
+Хронометраж ~9:06 (пересчитано под реальный темп речи — было ошибочно указано ~11:00). Стиль Clinical v2. Голос Cillian.
 Эталон-победитель: Voided Thoughts «How Different Are Our Inner Monologues?» — **2.2M / 18.7×** (главная self-test тема 2026).
 Формула: **спрятать механику, продать чувство + self-test во время просмотра → комменты + Shorts.**
+
+> ⚠️ Тайм-коды глав и кадров пересчитаны 2026-07-02: 1205 слов озвучки при реальном темпе Cillian (~132 сл/мин, откалибровано по видео №5) дают ~9:06, а не 10:59 как было прикинуто изначально. Все тайм-коды в этом файле и в `image-renders.md`/`image-prompts.md` сжаты ×0.829. Сверить с фактической длиной 10 mp3-чанков при монтаже в CapCut — это оценка, не измерение.
 
 ## ФОРМУЛА (канон залетевших — применяем ниже)
 1. Заголовок 4–6 слов, про «ТЕБЯ», прячем ответ-механику, продаём странность/чувство.
@@ -37,15 +39,15 @@ The voice reading this sentence in your head right now — whose is it, really? 
 
 ⏳ Chapters:
 00:00 The voice reading this
-00:48 If it's talking, who's listening?
-02:05 You weren't born with it
-03:25 You're secretly speaking
-04:40 The twist: it isn't your thinking
-06:00 The same voice that hurts you
-07:15 200,000 years alone in one head
-08:25 You can turn it off
-09:30 What it really means
-10:20 Your strangest homework
+00:40 If it's talking, who's listening?
+01:44 You weren't born with it
+02:50 You're secretly speaking
+03:52 The twist: it isn't your thinking
+04:58 The same voice that hurts you
+06:01 200,000 years alone in one head
+06:59 You can turn it off
+07:53 What it really means
+08:34 Your strangest homework
 
 New videos every week. Subscribe → @whyyou-win
 
