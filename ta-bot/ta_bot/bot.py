@@ -14,7 +14,7 @@ from aiogram.types import BufferedInputFile, Message
 from ta_bot import data_crypto, data_forex
 from ta_bot.chart import render_chart
 from ta_bot.config import CRYPTO_TIMEFRAMES, FOREX_TIMEFRAMES, TELEGRAM_BOT_TOKEN
-from ta_bot.indicators import add_indicators, confluence_signal
+from ta_bot.indicators import add_indicators, confluence_signal, historical_accuracy
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -34,7 +34,7 @@ HELP_TEXT = (
 )
 
 
-def format_signal_text(symbol: str, timeframe: str, signal: dict) -> str:
+def format_signal_text(symbol: str, timeframe: str, signal: dict, history: dict) -> str:
     lines = [
         f"<b>{symbol}</b> ({timeframe})",
         f"Last close: {signal['last_close']:.5f}",
@@ -46,6 +46,14 @@ def format_signal_text(symbol: str, timeframe: str, signal: dict) -> str:
     for name, direction, detail in signal["details"]:
         lines.append(f"- {name}: {direction} ({detail})")
     lines.append("")
+    if history["total"] > 0:
+        lines.append(
+            f"Historical accuracy of this signal on {symbol} {timeframe} "
+            f"over the last {history['total'] + 60} candles: "
+            f"{history['accuracy_pct']:.1f}% ({history['correct']}/{history['total']})"
+        )
+        lines.append("(Backward-looking hit rate on this sample — not a forward-looking probability.)")
+        lines.append("")
     lines.append(DISCLAIMER)
     return "\n".join(lines)
 
@@ -85,11 +93,12 @@ async def cmd_analyze(message: Message) -> None:
 
     df_ind = add_indicators(df)
     signal = confluence_signal(df_ind)
+    history = historical_accuracy(df_ind)
 
     chart_buf = render_chart(df_ind.tail(100), title=f"{symbol} {timeframe}")
     photo = BufferedInputFile(chart_buf.read(), filename="chart.png")
 
-    await message.answer_photo(photo, caption=format_signal_text(symbol, timeframe, signal))
+    await message.answer_photo(photo, caption=format_signal_text(symbol, timeframe, signal, history))
 
 
 def build_dispatcher() -> Dispatcher:

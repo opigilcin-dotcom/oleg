@@ -78,3 +78,30 @@ def confluence_signal(df_with_indicators: pd.DataFrame) -> dict:
         "details": votes,
         "last_close": last["close"],
     }
+
+
+def historical_accuracy(df_with_indicators: pd.DataFrame, warmup: int = 60) -> dict:
+    """Replay the confluence signal candle-by-candle and check it against what
+    actually happened on the next candle. This is a backward-looking hit rate on
+    this specific sample, not a forward-looking probability — past accuracy on
+    one dataset does not predict future price movement.
+    """
+    correct = 0
+    total = 0
+
+    for i in range(warmup, len(df_with_indicators) - 1):
+        window = df_with_indicators.iloc[: i + 1]
+        signal = confluence_signal(window)
+        if signal["overall"] == "neutral":
+            continue
+
+        this_close = df_with_indicators["close"].iloc[i]
+        next_close = df_with_indicators["close"].iloc[i + 1]
+        actual_direction = "bullish" if next_close > this_close else "bearish"
+
+        total += 1
+        if signal["overall"] == actual_direction:
+            correct += 1
+
+    accuracy_pct = (correct / total * 100) if total else None
+    return {"correct": correct, "total": total, "accuracy_pct": accuracy_pct}
