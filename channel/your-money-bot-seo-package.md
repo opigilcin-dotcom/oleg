@@ -2,39 +2,47 @@
 
 **Дата:** 2026-08-07
 **Тема:** Обзор/проверка Telegram бота Your Money (юнинг бот)
-**Язык:** RU (с EN-ключевыми словами для двойного охвата)
+**Целевые запросы:** "telegram bot earn money" + "telegram earn money"
 
 ---
 
 ## ОПИСАНИЕ ДЛЯ YOUTUBE (копировать целиком)
 
 ```
-#YourMoney #ТелеграмБот #Заработок #TelegramBot #ЮнингБот #EarnMoney #ЗаработокВТелеграме #Заработок2026
+#TelegramBotEarnMoney #TelegramEarnMoney #YourMoney #EarnMoney #TelegramBot #EarnCrypto #ЮнингБот #ТелеграмБот
 
-Your Money Telegram бот — юнинг бот для заработка в Телеграме 2026. Проверил лично: сколько реально можно заработать, как работает юнинг бот, вывод денег и честный результат. Telegram bot earn money — реальный тест без вложений. Смотри до конца — покажу всё без прикрас.
+Telegram bot earn money — can you REALLY earn money with a Telegram bot? I tested Your Money юнинг бот to find out. Telegram earn money 2026: full real test, no fake screenshots, real crypto results. Is this Telegram earning bot legit or just hype?
 
-В ЭТОМ ВИДЕО:
-- Что такое Your Money и как работает юнинг бот в Телеграме
-- Пошаговая регистрация и первый заработок
-- Сколько реально платит Your Money бот — живой тест
-- Вывод денег: сроки, минималка, подводные камни
-- Вердикт: скам или реальный заработок?
+Can you really earn money with a Telegram earning bot, or is it just another viral trend?
+In this video, I'm testing a viral Telegram earning bot to find out whether you can actually earn crypto playing games. Instead of relying on screenshots, comments, or hype, I decided to test the entire process myself from start to finish.
 
-ТАЙМКОДЫ:
-0:00 — Что обещает Your Money бот
-0:00 — Регистрация и первые шаги
-0:00 — Как работает юнинг бот
-0:00 — Сколько заработал за тест
-0:00 — Вывод денег — получилось?
-0:00 — Итог: стоит ли начинать?
+This is another episode of Jake Tests, where I test trending apps, Telegram bots, AI tools, crypto tools, and online platforms to see what really happens during a real test.
 
-ССЫЛКИ:
-[ссылка на бота]
-[ссылка на Telegram канал]
+No fake screenshots.
+No edited highlights.
+No exaggerated claims.
+Just a complete walkthrough and my personal experience.
 
-ПОДПИСЫВАЙСЯ и жми колокольчик — каждую неделю проверяю Telegram боты и схемы заработка в интернете. Пиши в комментариях, какой бот проверить следующим!
+In this video:
+✔️ Testing a Telegram earning bot (Your Money юнинг бот)
+✔️ Step-by-step setup
+✔️ Real-time walkthrough
+✔️ My personal results
+✔️ Final observations
 
-Telegram бот для заработка, Your Money бот обзор, юнинг бот телеграм, заработок в телеграме 2026, telegram bot earn money, проверка телеграм ботов по заработку, как заработать на телеграм боте, реальный заработок телеграм бот, telegram earning bot 2026, пассивный доход телеграм, can you earn money from telegram bots, telegram bot earn money review, заработок без вложений 2026, телеграм бот вывод денег, make money with telegram bots, earn money app telegram, your money telegram bot review, passive income telegram bot, заработок в интернете
+TIMESTAMPS:
+0:00 — Intro: Can you really earn money with a Telegram bot?
+0:00 — Registration & first steps
+0:00 — How the юнинг бот works
+0:00 — Real-time test & earnings
+0:00 — Withdrawal attempt
+0:00 — Final verdict: legit or scam?
+
+Whether you're interested in Telegram earn money, Telegram bot earn money, earn crypto playing games, or simply enjoy watching real app tests, this series is all about testing popular tools instead of trusting online hype.
+
+SUBSCRIBE & hit the bell — every week I test Telegram bots, crypto tools, and online earning platforms. Drop a comment below: which bot should I test next?
+
+Telegram bot earn money, telegram earn money, Your Money bot review, юнинг бот телеграм, telegram bot earn money 2026, telegram earn money 2026, earn crypto playing games, can you earn money from telegram bots, telegram earning bot review, how to earn money from telegram, telegram bot real test, make money with telegram bots, passive income telegram bot, earn money app telegram, your money telegram bot test, заработок в телеграме 2026, заработок на телеграм ботах, Jake Tests, online earning test
 ```
 
 ---
@@ -44,42 +52,44 @@ Telegram бот для заработка, Your Money бот обзор, юни�
 ### Первые 200-300 символов (ИНДЕКСИРУЕМАЯ ЗОНА)
 
 ```
-Your Money Telegram бот — юнинг бот для заработка в Телеграме 2026. Проверил лично: сколько реально можно заработать, как работает юнинг бот, вывод денег и честный результат. Telegram bot earn money — реальный тест без вложений.
+Telegram bot earn money — can you REALLY earn money with a Telegram bot? I tested Your Money юнинг бот to find out. Telegram earn money 2026: full real test, no fake screenshots, real crypto results. Is this Telegram earning bot legit or just hype?
 ```
 
-**Символов:** ~235
-**Ключевые слова внутри:**
-- Your Money (бренд)
-- Telegram бот (основной запрос)
-- юнинг бот (специфика)
-- заработок в Телеграме 2026 (поисковый хвост)
-- telegram bot earn money (EN-запрос)
-- вывод денег (intent "можно ли вывести")
-- без вложений (магнитный фильтр)
+**Символов:** ~252
+**Целевые ключи (оба в первых 252 символах):**
+- **telegram bot earn money** — точное вхождение, первая фраза описания
+- **telegram earn money** — точное вхождение, вторая фраза
+- Your Money (бренд бота)
+- юнинг бот (RU-специфика)
+- 2026 (год — фильтрует старый контент)
+- real test / no fake screenshots (CTR-слова)
 
 ### Хештеги (первая строка описания)
 
 ```
-#YourMoney #ТелеграмБот #Заработок #TelegramBot #ЮнингБот #EarnMoney #ЗаработокВТелеграме #Заработок2026
+#TelegramBotEarnMoney #TelegramEarnMoney #YourMoney #EarnMoney #TelegramBot #EarnCrypto #ЮнингБот #ТелеграмБот
 ```
 
-**Первые 3 показываются НАД заголовком:** #YourMoney #ТелеграмБот #Заработок
+**Первые 3 НАД заголовком:** #TelegramBotEarnMoney #TelegramEarnMoney #YourMoney
 
 ### SEO-хвост (внизу описания)
 
 ```
-Telegram бот для заработка, Your Money бот обзор, юнинг бот телеграм, заработок в телеграме 2026, telegram bot earn money, проверка телеграм ботов по заработку, как заработать на телеграм боте, реальный заработок телеграм бот, telegram earning bot 2026, пассивный доход телеграм, can you earn money from telegram bots, telegram bot earn money review, заработок без вложений 2026, телеграм бот вывод денег, make money with telegram bots, earn money app telegram, your money telegram bot review, passive income telegram bot, заработок в интернете
+Telegram bot earn money, telegram earn money, Your Money bot review, юнинг бот телеграм, telegram bot earn money 2026, telegram earn money 2026, earn crypto playing games, can you earn money from telegram bots, telegram earning bot review, how to earn money from telegram, telegram bot real test, make money with telegram bots, passive income telegram bot, earn money app telegram, your money telegram bot test, заработок в телеграме 2026, заработок на телеграм ботах, Jake Tests, online earning test
 ```
+
+**Ключевых фраз:** 19 (оба целевых запроса повторены с "2026")
 
 ---
 
 ## ТЕГИ ДЛЯ ПОЛЯ ТЕГОВ (копировать целиком)
 
 ```
-your money telegram бот, юнинг бот телеграм, your money бот обзор, проверка телеграм ботов по заработку, telegram bot earn money review, заработок на телеграм ботах 2026, telegram earning bot 2026, юнинг бот заработок, your money bot telegram review, как заработать на телеграм боте, реальный заработок телеграм бот, телеграм бот вывод денег, can you earn money telegram bot, заработок в телеграме 2026, telegram earn money 2026, telegram bot earn money, заработок в телеграме, make money with telegram bots, заработок без вложений, passive income telegram bot, telegram mini app, заработок в интернете, ai telegram bot, заработок 2026, деньги
+telegram bot earn money, telegram earn money, your money telegram bot, юнинг бот телеграм, telegram bot earn money 2026, telegram earn money 2026, your money bot review, telegram earning bot, earn crypto playing games, telegram earning bot review, can you earn money telegram bot, how to earn money from telegram, telegram bot real test, your money юнинг бот, юнинг бот заработок, make money with telegram bots, earn money app telegram, passive income telegram bot, telegram mini app, earn crypto telegram, заработок в телеграме, заработок без вложений, заработок на телеграм ботах, Jake Tests, online earning
 ```
 
 **Тегов:** 25
+**Позиции 1-2:** оба целевых запроса
 **Формула:** 15 low-competition (1-15) + 10 high-volume (16-25)
 
 ---
@@ -87,6 +97,6 @@ your money telegram бот, юнинг бот телеграм, your money бо�
 ## ЗАКРЕПЛЁННЫЙ КОММЕНТАРИЙ (для engagement)
 
 ```
-Тестировал этот бот лично — результат в видео. Кто уже пробовал Your Money? Напишите сколько вывели!
-А если хотите чтобы я проверил другой бот — пишите название в комментариях.
+Full honest test — no shortcuts, no edited highlights. Have you tried Your Money bot? Drop your results below!
+What Telegram bot should I test next? Comment the name and I'll do a real walkthrough.
 ```
