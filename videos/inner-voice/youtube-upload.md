@@ -65,6 +65,12 @@ SOURCES
 the voice in your head, inner voice, inner monologue, do you have an inner voice, anendophasia, not everyone has an inner voice, inner speech, who is the voice in your head, consciousness, self awareness, psychology, philosophy, mind, thinking, subvocalization, how do you think, voice in your head isnt you, curious, what if, self perception
 ```
 
+## Теги v2 — усилено реальными тегами эталона (Voided Thoughts, "How Different Are Our Inner Monologues?", 2.28M просмотров, теги вытащены через YouTube API)
+```
+the voice in your head, inner voice, inner monologue, do you have an inner voice, anendophasia, not everyone has an inner voice, inner speech, who is the voice in your head, consciousness, self awareness, psychology, philosophy, mind, thinking, subvocalization, how people think, mental health, self image, identity, big ideas, hypothetical scenario, voice in your head isnt you
+```
+Что добавили из реального эталона: `how people think`, `mental health`, `self image`, `identity`, `big ideas`, `hypothetical scenario` — это подтверждённо рабочие широкие теги именно в этой нише (не гадание, а факт из тегов видео с 2.28M просмотров). Убрали слабые общие `curious`/`what if` — заменили на более специфичные для темы.
+
 ## Настройки при загрузке
 - Видео: `inner-voice.mp4` · Язык English · **Not made for kids** ✅
 - **Категория: Entertainment** (как у эталона — шире охват, чем Education)
