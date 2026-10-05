@@ -1,0 +1,475 @@
+<title>Oleg AI Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: an editing-suite page — hero is a live NLE timeline (video / voice / music tracks + playhead); sections read like reels on a cut list. */
+:root {
+  --bg: #eceef2;
+  --surface: #f7f8fa;
+  --ink: #141823;
+  --muted: #5a6172;
+  --line: #d3d7df;
+  --accent: #2e43d8;      /* ultramarine: the chroma/selection colour of an editor */
+  --accent-ink: #ffffff;
+  --mark: #c98a12;        /* sodium amber: timecodes, in/out marks */
+  --track-v: #2e43d8;
+  --track-a: #2f8f6b;
+  --track-m: #c98a12;
+  --font-display: "Unbounded", "Arial Black", system-ui, sans-serif;
+  --font-body: "Onest", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f121a; --surface: #161a24; --ink: #e8eaf1; --muted: #9aa1b3; --line: #262c3a;
+    --accent: #8090ff; --accent-ink: #0f121a; --mark: #e6a93a;
+    --track-v: #6f80ff; --track-a: #4fbf94; --track-m: #e6a93a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f121a; --surface: #161a24; --ink: #e8eaf1; --muted: #9aa1b3; --line: #262c3a;
+  --accent: #8090ff; --accent-ink: #0f121a; --mark: #e6a93a;
+  --track-v: #6f80ff; --track-a: #4fbf94; --track-m: #e6a93a;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: 17px; line-height: 1.6;
+  padding-inline: clamp(16px, 4vw, 48px);
+}
+.wrap { max-width: 1120px; margin-inline: auto; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.08; text-wrap: balance; margin: 0; }
+p { margin: 0; }
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--mark); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+/* Nav */
+.nav {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding-block: 16px; background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.logo { font-family: var(--font-display); font-weight: 800; font-size: 18px; letter-spacing: -.02em; text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.rec { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent); }
+.nav ul { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
+.nav ul a { text-decoration: none; color: var(--muted); }
+.nav ul a:hover { color: var(--ink); }
+@media (max-width: 720px) { .nav ul { display: none; } }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  font: 600 16px/1 var(--font-body); text-decoration: none; cursor: pointer;
+  padding: 14px 22px; border-radius: 999px; border: 1px solid transparent;
+  transition: transform .15s ease, background .15s ease;
+}
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-primary:hover { transform: translateY(-1px); }
+.btn-ghost { border-color: var(--line); color: var(--ink); background: transparent; }
+.btn-ghost:hover { border-color: var(--ink); }
+
+/* Hero */
+.hero { padding-block: clamp(48px, 9vw, 104px) 40px; display: grid; gap: 40px; }
+.hero h1 { font-size: clamp(38px, 7.2vw, 88px); font-weight: 800; letter-spacing: -.035em; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero-sub { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 48px; align-items: end; }
+.hero-sub p { max-width: 54ch; color: var(--muted); font-size: 19px; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+@media (max-width: 820px) { .hero-sub { grid-template-columns: minmax(0, 1fr); } }
+
+/* Timeline */
+.timeline {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+  padding: 18px 18px 22px; overflow: hidden;
+}
+.tl-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; font-size: 13px; color: var(--muted); }
+.tl-head .tc { color: var(--mark); font-weight: 600; font-size: 15px; }
+.tl-body { position: relative; display: grid; gap: 8px; }
+.ruler { display: grid; grid-template-columns: 64px 1fr; font-size: 11px; color: var(--muted); }
+.ruler-ticks { display: flex; justify-content: space-between; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+.track { display: grid; grid-template-columns: 64px 1fr; align-items: center; gap: 0; }
+.track-label { font-family: var(--font-mono); font-size: 11px; letter-spacing: .1em; color: var(--muted); }
+.lane { position: relative; height: 38px; }
+.clip {
+  position: absolute; top: 0; bottom: 0; border-radius: 6px;
+  display: flex; align-items: center; padding-inline: 10px; overflow: hidden;
+  font-size: 12px; font-weight: 600; white-space: nowrap; text-overflow: ellipsis;
+  color: var(--bg);
+}
+.clip.v { background: var(--track-v); }
+.clip.a { background: color-mix(in srgb, var(--track-a) 18%, transparent); color: var(--track-a); border: 1px solid var(--track-a); }
+.clip.m { background: color-mix(in srgb, var(--track-m) 18%, transparent); color: var(--track-m); border: 1px solid var(--track-m); }
+.wave { position: absolute; inset: 6px 8px; opacity: .55; }
+.playhead {
+  position: absolute; top: -6px; bottom: -6px; left: calc(64px + 38%);
+  width: 2px; background: var(--mark); pointer-events: none;
+}
+.playhead::before { content: ""; position: absolute; top: -2px; left: -5px; border: 6px solid transparent; border-top: 8px solid var(--mark); }
+@media (prefers-reduced-motion: no-preference) {
+  .playhead { animation: play 14s linear infinite; }
+  @keyframes play { from { left: 64px; } to { left: calc(100% - 2px); } }
+}
+@media (max-width: 560px) { .clip { font-size: 10px; padding-inline: 6px; } .ruler, .track { grid-template-columns: 44px 1fr; } .playhead { left: calc(44px + 38%); } @keyframes play { from { left: 44px; } } }
+
+/* Sections */
+section { padding-block: clamp(56px, 8vw, 96px); border-top: 1px solid var(--line); }
+.sec-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px 48px; align-items: end; margin-bottom: 40px; }
+.sec-head h2 { font-size: clamp(28px, 4.2vw, 46px); font-weight: 600; letter-spacing: -.02em; }
+.sec-head p { color: var(--muted); max-width: 52ch; }
+@media (max-width: 820px) { .sec-head { grid-template-columns: minmax(0, 1fr); } }
+
+/* Services */
+.services { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.svc { background: var(--surface); padding: 28px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.svc-meta { display: flex; justify-content: space-between; gap: 12px; font-size: 12px; color: var(--muted); }
+.svc-meta .fmt { color: var(--mark); }
+.svc h3 { font-size: 21px; font-weight: 600; letter-spacing: -.01em; }
+.svc p { color: var(--muted); font-size: 16px; }
+.svc ul { margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.svc li { font-size: 13px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; }
+@media (max-width: 720px) { .services { grid-template-columns: minmax(0, 1fr); } }
+
+/* Process: a real sequence, so it is numbered */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; counter-reset: s; }
+.steps li { counter-increment: s; display: grid; gap: 10px; align-content: start; min-width: 0; padding-top: 18px; border-top: 2px solid var(--ink); }
+.steps li::before { content: "0" counter(s); font-family: var(--font-mono); font-size: 13px; color: var(--mark); }
+.steps h3 { font-size: 17px; font-weight: 600; }
+.steps p { color: var(--muted); font-size: 15px; }
+@media (max-width: 900px) { .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .steps { grid-template-columns: minmax(0, 1fr); } }
+
+/* Case */
+.case { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 32px; align-items: stretch; }
+.screen {
+  position: relative; aspect-ratio: 16 / 9; max-width: 100%; border-radius: 14px; overflow: hidden;
+  background:
+    radial-gradient(120% 90% at 70% 100%, color-mix(in srgb, var(--mark) 55%, transparent), transparent 60%),
+    linear-gradient(180deg, #1b2440 0%, #3a3350 45%, #b97a3a 100%);
+  display: flex; align-items: flex-end; padding: 20px; color: #fff;
+}
+.screen canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.screen .overlay { position: relative; display: flex; justify-content: space-between; width: 100%; gap: 12px; align-items: end; font-family: var(--font-mono); font-size: 12px; }
+.screen .overlay strong { font-family: var(--font-display); font-size: clamp(18px, 2.6vw, 28px); font-weight: 600; display: block; letter-spacing: -.01em; }
+.play-link { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.14); color: #fff; padding: 8px 14px; border-radius: 999px; text-decoration: none; backdrop-filter: blur(4px); white-space: nowrap; }
+.case-info { display: grid; gap: 20px; align-content: start; }
+.case-info blockquote { margin: 0; padding-left: 18px; border-left: 2px solid var(--mark); color: var(--muted); font-size: 16px; }
+.specs { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 20px; margin: 0; font-size: 15px; }
+.specs dt { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding-top: 3px; }
+.specs dd { margin: 0; }
+.links { display: flex; flex-wrap: wrap; gap: 10px; }
+@media (max-width: 860px) { .case { grid-template-columns: minmax(0, 1fr); } }
+
+/* Pricing */
+.plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.plan { border: 1px solid var(--line); border-radius: 14px; padding: 28px; display: grid; gap: 16px; align-content: start; min-width: 0; }
+.plan.featured { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.plan.featured .plan-note, .plan.featured li { color: color-mix(in srgb, var(--bg) 75%, var(--ink)); }
+.plan h3 { font-size: 19px; font-weight: 600; }
+.price { font-family: var(--font-display); font-size: 34px; font-weight: 600; letter-spacing: -.02em; }
+.price small { font-family: var(--font-body); font-size: 15px; font-weight: 400; }
+.plan-note { color: var(--muted); font-size: 15px; }
+.plan ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; font-size: 15px; color: var(--muted); }
+.plan li::before { content: "▸ "; color: var(--mark); }
+@media (max-width: 900px) { .plans { grid-template-columns: minmax(0, 1fr); } }
+
+/* Contact */
+.contact { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; }
+.contact h2 { font-size: clamp(30px, 4.6vw, 52px); font-weight: 800; letter-spacing: -.03em; }
+.contact .lead { color: var(--muted); margin-top: 16px; max-width: 44ch; }
+form { display: grid; gap: 14px; min-width: 0; }
+label { display: grid; gap: 6px; font-size: 14px; color: var(--muted); }
+input, select, textarea {
+  font: 16px/1.4 var(--font-body); color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; width: 100%;
+}
+textarea { min-height: 110px; resize: vertical; }
+.out { display: grid; gap: 10px; background: var(--surface); border: 1px dashed var(--mark); border-radius: 10px; padding: 16px; }
+.out pre { margin: 0; white-space: pre-wrap; font: 14px/1.5 var(--font-mono); }
+.out p { font-size: 14px; color: var(--muted); }
+@media (max-width: 820px) { .contact { grid-template-columns: minmax(0, 1fr); } }
+
+footer { border-top: 1px solid var(--line); padding-block: 28px 40px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 14px; color: var(--muted); }
+</style>
+
+<div class="wrap">
+  <nav class="nav" aria-label="Основная навигация">
+    <a class="logo" href="#top"><span class="rec" aria-hidden="true"></span>OLEG&nbsp;AI&nbsp;STUDIO</a>
+    <ul>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#process">Как работаем</a></li>
+      <li><a href="#case">Кейс</a></li>
+      <li><a href="#pricing">Цены</a></li>
+    </ul>
+    <a class="btn btn-primary" href="#contact">Обсудить проект</a>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="eyebrow">AI-продакшн · видео · голос · YouTube</div>
+    <h1>Видео без камеры.<br>Голос без&nbsp;студии.<br><em>История — с&nbsp;первого кадра.</em></h1>
+    <div class="hero-sub">
+      <p>Мы собираем ролики целиком на нейросетях: от идеи и сценария до озвучки, визуала и обложки. Вы получаете готовый к публикации монтаж, а не набор генераций.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contact">Заказать ролик →</a>
+        <a class="btn btn-ghost" href="#case">Смотреть кейс</a>
+      </div>
+    </div>
+
+    <div class="timeline" aria-label="Пример монтажного таймлайна: видео, голос и музыка">
+      <div class="tl-head">
+        <span class="mono">SEQ_01 · Марафон_490BC · 16:9 · 24 fps</span>
+        <span class="mono tc" id="tc">00:00:24:11</span>
+      </div>
+      <div class="tl-body">
+        <div class="ruler mono"><span></span><div class="ruler-ticks"><span>00:00</span><span>00:15</span><span>00:30</span><span>00:45</span><span>01:05</span></div></div>
+        <div class="track"><span class="track-label">V1</span><div class="lane">
+          <div class="clip v" style="left:0;width:24%">Акрополь, рассвет</div>
+          <div class="clip v" style="left:24.5%;width:27%">Флот у Марафона</div>
+          <div class="clip v" style="left:52%;width:25%">Фаланга</div>
+          <div class="clip v" style="left:77.5%;width:22.5%">Гонец</div>
+        </div></div>
+        <div class="track"><span class="track-label">A1</span><div class="lane">
+          <div class="clip a" style="left:2%;width:96%"><canvas class="wave" data-seed="3"></canvas><span style="position:relative">VO · рассказчик · 01:05</span></div>
+        </div></div>
+        <div class="track"><span class="track-label">A2</span><div class="lane">
+          <div class="clip m" style="left:0;width:100%"><canvas class="wave" data-seed="9"></canvas><span style="position:relative">Музыка · эпик</span></div>
+        </div></div>
+        <div class="playhead" aria-hidden="true"></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="services">
+    <div class="sec-head">
+      <h2>Что мы снимаем, не включая камеру</h2>
+      <p>Каждая услуга — законченный результат. Берите одну или весь цикл под ключ.</p>
+    </div>
+    <div class="services">
+      <article class="svc">
+        <div class="svc-meta mono"><span>YouTube</span><span class="fmt">8–20 мин · 16:9</span></div>
+        <h3>Faceless-каналы под ключ</h3>
+        <p>Выбираем нишу по данным, пишем сценарии с удерживающим хуком и выпускаем ролики по графику.</p>
+        <ul><li>анализ ниши</li><li>сценарий</li><li>монтаж</li></ul>
+      </article>
+      <article class="svc">
+        <div class="svc-meta mono"><span>Reels · Shorts · TikTok</span><span class="fmt">15–60 с · 9:16</span></div>
+        <h3>Короткие AI-ролики</h3>
+        <p>Кинематографичные клипы из текста или фото: реклама, анонсы, исторические мини-истории.</p>
+        <ul><li>генерация видео</li><li>субтитры</li><li>звук</li></ul>
+      </article>
+      <article class="svc">
+        <div class="svc-meta mono"><span>Голос</span><span class="fmt">RU · EN · 20+ языков</span></div>
+        <h3>Озвучка и дубляж</h3>
+        <p>Дикторский голос под ваш тон, перевод готового видео на другие языки с сохранением тембра.</p>
+        <ul><li>диктор</li><li>клон голоса</li><li>дубляж</li></ul>
+      </article>
+      <article class="svc">
+        <div class="svc-meta mono"><span>Упаковка</span><span class="fmt">1280×720 · A/B</span></div>
+        <h3>Обложки и заголовки</h3>
+        <p>Превью и названия, которые проверяем на кликабельность до публикации, а не после.</p>
+        <ul><li>превью</li><li>заголовки</li><li>A/B-тест</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="sec-head">
+      <h2>От идеи до публикации за пять шагов</h2>
+      <p>Первый ролик обычно готов за 3–5 рабочих дней. Дальше — по согласованному графику.</p>
+    </div>
+    <ol class="steps">
+      <li><h3>Ниша и идея</h3><p>Смотрим спрос, конкурентов и что сейчас набирает просмотры.</p></li>
+      <li><h3>Сценарий</h3><p>Хук в первые 5 секунд, структура, раскадровка по сценам.</p></li>
+      <li><h3>Голос</h3><p>Подбираем диктора и записываем озвучку под хронометраж.</p></li>
+      <li><h3>Визуал и монтаж</h3><p>Генерируем кадры и клипы, собираем, добавляем музыку и субтитры.</p></li>
+      <li><h3>Упаковка</h3><p>Обложка, заголовок, описание. Отдаём файл, готовый к загрузке.</p></li>
+    </ol>
+  </section>
+
+  <section id="case">
+    <div class="sec-head">
+      <h2>Кейс: «Марафон, 490 год до н.&nbsp;э.»</h2>
+      <p>Короткая историческая зарисовка: кинематографичный клип и минутный рассказ о том, откуда взялся марафонский забег.</p>
+    </div>
+    <div class="case">
+      <div class="screen">
+        <canvas id="dust" aria-hidden="true"></canvas>
+        <div class="overlay">
+          <div><span>SC 04 · TAKE 1</span><strong>Гонец бежит к Афинам</strong></div>
+          <a class="play-link" href="https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260930_084811_4cfa77d8-07c1-4bb5-a559-36628a4e3b16.mp4" target="_blank" rel="noopener">▶ Смотреть</a>
+        </div>
+      </div>
+      <div class="case-info">
+        <blockquote>«Он ворвался на городскую площадь, выдохнул одно слово: „Никэ!“ — „Победа!“ — и упал замертво».</blockquote>
+        <dl class="specs">
+          <dt>Видео</dt><dd>10 с · 16:9 · 720p</dd>
+          <dt>Голос</dt><dd>1 мин 05 с · русский · мужской диктор</dd>
+          <dt>Сцены</dt><dd>Акрополь, фаланга гоплитов, гонец на закате</dd>
+          <dt>Срок</dt><dd>меньше часа от идеи до готовых файлов</dd>
+        </dl>
+        <div class="links">
+          <a class="btn btn-ghost" href="https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260930_084811_4cfa77d8-07c1-4bb5-a559-36628a4e3b16.mp4" target="_blank" rel="noopener">Видео ↗</a>
+          <a class="btn btn-ghost" href="https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20260930_084752_fa0d43b1-aaf3-41ef-be60-9ac0245d3d0b.mp3" target="_blank" rel="noopener">Озвучка ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="sec-head">
+      <h2>Цены</h2>
+      <p>Ориентиры для старта. Точную смету считаем после брифа — она зависит от длины и количества сцен.</p>
+    </div>
+    <div class="plans">
+      <article class="plan">
+        <h3>Клип</h3>
+        <div class="price">от 4 900 ₽</div>
+        <p class="plan-note">Один короткий ролик до 60 секунд.</p>
+        <ul><li>сценарий и раскадровка</li><li>AI-видео и озвучка</li><li>субтитры и музыка</li></ul>
+      </article>
+      <article class="plan featured">
+        <h3>YouTube-ролик</h3>
+        <div class="price">от 14 900 ₽</div>
+        <p class="plan-note">Длинное видео 8–15 минут с упаковкой.</p>
+        <ul><li>сценарий с хуком</li><li>60–80 сгенерированных кадров</li><li>обложка и заголовок</li></ul>
+      </article>
+      <article class="plan">
+        <h3>Канал под ключ</h3>
+        <div class="price">от 49 900 ₽<small> / мес</small></div>
+        <p class="plan-note">Регулярный выпуск по графику.</p>
+        <ul><li>анализ ниши и конкурентов</li><li>4 ролика + 8 shorts в месяц</li><li>отчёт по аналитике</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div>
+      <div class="eyebrow">Бриф за минуту</div>
+      <h2 style="margin-top:12px">Расскажите, какое видео нужно</h2>
+      <p class="lead">Заполните форму — мы соберём из неё готовый бриф. Скопируйте его и отправьте нам в Telegram: <span class="mono">@your_telegram</span></p>
+    </div>
+    <form id="brief" novalidate>
+      <label for="f-name">Как к вам обращаться<input id="f-name" name="name" placeholder="Анна" required></label>
+      <label for="f-type">Что нужно
+        <select id="f-type" name="type">
+          <option>Короткий AI-ролик</option>
+          <option>YouTube-ролик</option>
+          <option>Канал под ключ</option>
+          <option>Озвучка или дубляж</option>
+          <option>Обложки и заголовки</option>
+        </select>
+      </label>
+      <label for="f-idea">Тема и пожелания<textarea id="f-idea" name="idea" placeholder="Например: серия роликов про Древний Рим, 9:16, мужской голос"></textarea></label>
+      <button class="btn btn-primary" type="submit" style="justify-self:start">Собрать бриф</button>
+      <div class="out" id="out" hidden>
+        <pre id="out-text"></pre>
+        <button class="btn btn-ghost" type="button" id="copy" style="justify-self:start">Скопировать бриф</button>
+        <p id="copy-status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <span>© 2026 Oleg AI Studio</span>
+    <span class="mono">TC 01:05:00 · END OF REEL</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  // Static waveforms on the audio tracks
+  function drawWave(c) {
+    var r = c.getBoundingClientRect(); if (!r.width) return;
+    var dpr = window.devicePixelRatio || 1;
+    c.width = r.width * dpr; c.height = r.height * dpr;
+    var ctx = c.getContext("2d"); ctx.scale(dpr, dpr);
+    ctx.fillStyle = getComputedStyle(c.parentElement).color;
+    var seed = +c.dataset.seed || 1, n = Math.floor(r.width / 3);
+    for (var i = 0; i < n; i++) {
+      var v = Math.abs(Math.sin(i * 0.37 * seed) * Math.cos(i * 0.11 + seed)) * 0.85 + 0.12;
+      var h = v * r.height;
+      ctx.fillRect(i * 3, (r.height - h) / 2, 2, h);
+    }
+  }
+  function waves() { document.querySelectorAll("canvas.wave").forEach(drawWave); }
+  waves(); window.addEventListener("resize", waves);
+
+  // Running timecode that follows the playhead loop (14 s for 65 s of program)
+  var tc = document.getElementById("tc");
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduce) {
+    var start = performance.now();
+    (function tick(now) {
+      var p = ((now - start) % 14000) / 14000, t = p * 65;
+      var s = Math.floor(t), f = Math.floor((t - s) * 24);
+      tc.textContent = "00:" + String(Math.floor(s / 60)).padStart(2, "0") + ":" + String(s % 60).padStart(2, "0") + ":" + String(f).padStart(2, "0");
+      requestAnimationFrame(tick);
+    })(start);
+  }
+
+  // Dust in the case "screen"
+  var dust = document.getElementById("dust");
+  var dctx = dust.getContext("2d"), parts = [];
+  function sizeDust() {
+    var r = dust.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
+    dust.width = r.width * dpr; dust.height = r.height * dpr; dctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    parts = Array.from({ length: 70 }, function () {
+      return { x: Math.random() * r.width, y: Math.random() * r.height, s: Math.random() * 1.8 + .4, v: Math.random() * .35 + .1 };
+    });
+    drawDust(r);
+  }
+  function drawDust(r) {
+    dctx.clearRect(0, 0, r.width, r.height);
+    // horizon silhouette: hills and a lone runner
+    dctx.fillStyle = "rgba(20,16,30,.85)";
+    dctx.beginPath(); dctx.moveTo(0, r.height * .78);
+    for (var x = 0; x <= r.width; x += 20) dctx.lineTo(x, r.height * (.74 + Math.sin(x / 90) * .03));
+    dctx.lineTo(r.width, r.height); dctx.lineTo(0, r.height); dctx.fill();
+    var rx = r.width * .62, ry = r.height * .72, k = r.height / 300;
+    dctx.strokeStyle = "rgba(20,16,30,.95)"; dctx.lineWidth = 3 * k; dctx.lineCap = "round";
+    dctx.beginPath(); dctx.arc(rx, ry - 34 * k, 5 * k, 0, 7); dctx.fillStyle = "rgba(20,16,30,.95)"; dctx.fill();
+    dctx.beginPath();
+    dctx.moveTo(rx, ry - 28 * k); dctx.lineTo(rx - 3 * k, ry - 10 * k);
+    dctx.moveTo(rx - 3 * k, ry - 10 * k); dctx.lineTo(rx + 8 * k, ry); dctx.moveTo(rx - 3 * k, ry - 10 * k); dctx.lineTo(rx - 12 * k, ry - 2 * k);
+    dctx.moveTo(rx - 1 * k, ry - 24 * k); dctx.lineTo(rx + 10 * k, ry - 18 * k); dctx.moveTo(rx - 1 * k, ry - 24 * k); dctx.lineTo(rx - 10 * k, ry - 20 * k);
+    dctx.stroke();
+    parts.forEach(function (p) { dctx.fillStyle = "rgba(255,220,160,.55)"; dctx.fillRect(p.x, p.y, p.s, p.s); });
+  }
+  sizeDust(); window.addEventListener("resize", sizeDust);
+  if (!reduce) {
+    (function loop() {
+      var r = dust.getBoundingClientRect();
+      parts.forEach(function (p) { p.x += p.v; p.y -= p.v * .3; if (p.x > r.width) p.x = 0; if (p.y < 0) p.y = r.height; });
+      drawDust(r); requestAnimationFrame(loop);
+    })();
+  }
+
+  // Brief builder
+  var form = document.getElementById("brief"), out = document.getElementById("out"), txt = document.getElementById("out-text"), status = document.getElementById("copy-status");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var d = new FormData(form);
+    var name = (d.get("name") || "").trim();
+    if (!name) { document.getElementById("f-name").focus(); status.textContent = ""; return; }
+    txt.textContent = "Бриф для Oleg AI Studio\nИмя: " + name + "\nЗадача: " + d.get("type") + "\nПожелания: " + ((d.get("idea") || "").trim() || "—");
+    out.hidden = false; status.textContent = "";
+  });
+  document.getElementById("copy").addEventListener("click", function () {
+    var t = txt.textContent;
+    function fallback() {
+      var range = document.createRange(); range.selectNodeContents(txt);
+      var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+      status.textContent = "Текст выделен — скопируйте его вручную.";
+    }
+    try {
+      navigator.clipboard.writeText(t).then(function () { status.textContent = "Скопировано. Отправьте бриф нам в Telegram."; }, fallback);
+    } catch (err) { fallback(); }
+  });
+})();
+</script>
