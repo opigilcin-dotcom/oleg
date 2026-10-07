@@ -1,32 +1,87 @@
 {
-  "speed": 1.1,
-  "out": "reel01.mp4",
-  "files": {
-    "vo1.mp3": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064110_77fe759b-9651-4446-91de-7c5823735dc6.mp3",
-    "vo2.mp3": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064110_a82b3589-9fcf-4c11-b0d7-1642d99a2588.mp3",
-    "vo3.mp3": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064110_e3aa1286-95cd-4104-9ef2-969c3a1479f1.mp3",
-    "vo4.mp3": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064110_d7073d54-2f7b-461d-9a2c-ee6c4f7222d5.mp3",
-    "vo5.mp3": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064150_98547e0c-e980-4e6f-8e44-b61bcdc200ed.mp3",
-    "vo6.mp3": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064149_7b28ac33-bedc-42fb-a59e-99ded9c4e3a9.mp3",
-    "img1.png": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064113_7e22b404-e552-4e9e-b747-c4a71c2702c6.png",
-    "img2.png": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064112_ce5bcac1-7bca-4f93-8ca2-326b6add3279.png",
-    "img3.png": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064112_bc7e599a-d884-419f-9835-49140209fc19.png",
-    "img4.png": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064112_db49a45c-b1de-4be8-8c70-04e8395f104e.png",
-    "img5.png": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064221_f6889209-7d05-4c67-abaa-9a0cab0872e6.png",
-    "img6.png": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064221_25d11e00-5df5-43ef-85fb-40ca80a19abd.png"
+ "speed": 1.1,
+ "out": "reel01.mp4",
+ "files": {
+  "vo1.mp3": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064110_77fe759b-9651-4446-91de-7c5823735dc6.mp3",
+  "vo2.mp3": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064110_a82b3589-9fcf-4c11-b0d7-1642d99a2588.mp3",
+  "vo3.mp3": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064110_e3aa1286-95cd-4104-9ef2-969c3a1479f1.mp3",
+  "vo4.mp3": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064110_d7073d54-2f7b-461d-9a2c-ee6c4f7222d5.mp3",
+  "vo5.mp3": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064150_98547e0c-e980-4e6f-8e44-b61bcdc200ed.mp3",
+  "vo6.mp3": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064149_7b28ac33-bedc-42fb-a59e-99ded9c4e3a9.mp3",
+  "img1.png": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064113_7e22b404-e552-4e9e-b747-c4a71c2702c6.png",
+  "img2.png": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064112_ce5bcac1-7bca-4f93-8ca2-326b6add3279.png",
+  "img3.png": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064112_bc7e599a-d884-419f-9835-49140209fc19.png",
+  "img4.png": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064112_db49a45c-b1de-4be8-8c70-04e8395f104e.png",
+  "img5.png": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064221_f6889209-7d05-4c67-abaa-9a0cab0872e6.png",
+  "img6.png": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_064221_25d11e00-5df5-43ef-85fb-40ca80a19abd.png"
+ },
+ "segments": [
+  {
+   "vo": "vo1.mp3",
+   "imgs": [
+    "img1.png"
+   ],
+   "title": "НЕ НАЖИМАЙ\nЭТУ КНОПКУ",
+   "title_color": "red",
+   "subs": false,
+   "text": "Не нажимай эту кнопку на кассе за границей!"
   },
-  "segments": [
-    {"vo": "vo1.mp3", "imgs": ["img1.png"], "title": "НЕ НАЖИМАЙ\nЭТУ КНОПКУ", "title_color": "red", "subs": false,
-     "text": "Не нажимай эту кнопку на кассе за границей!"},
-    {"vo": "vo2.mp3", "imgs": ["img2.png", "img1.png"], "title": "ДОЛЛАРЫ\nИЛИ ЛИРЫ?", "title_color": "blue",
-     "text": "Терминал спрашивает: платить в долларах или в лирах? Кажется, без разницы."},
-    {"vo": "vo3.mp3", "imgs": ["img4.png", "img1.png", "img4.png"], "title": "+3–8% СВЕРХУ", "title_color": "red",
-     "text": "Но если выбрать не местную валюту, пересчитывать будет банк магазина. По своему курсу. И сверху — от трёх до восьми процентов."},
-    {"vo": "vo4.mp3", "imgs": ["img3.png", "img2.png"], "title": "DCC —\nЛОВУШКА ДЛЯ ТУРИСТОВ", "title_color": "red",
-     "text": "Это называется динамическая конвертация. И на ней туристы теряют тысячи за один отпуск."},
-    {"vo": "vo5.mp3", "imgs": ["img5.png"], "title": "ВСЕГДА ПЛАТИ\nВ МЕСТНОЙ ВАЛЮТЕ", "title_color": "blue",
-     "text": "Правило простое: всегда плати в валюте страны. Лиры, баты, дирхамы — только местная валюта."},
-    {"vo": "vo6.mp3", "imgs": ["img6.png"], "title": "СОХРАНИ,\nЧТОБЫ НЕ ЗАБЫТЬ", "title_color": "blue",
-     "text": "Сохрани, чтобы не забыть на кассе. А чек-лист денег в поездку — в Телеграме, ссылка в профиле."}
-  ]
+  {
+   "vo": "vo2.mp3",
+   "imgs": [
+    "img2.png",
+    "img1.png"
+   ],
+   "title": "ДОЛЛАРЫ\nИЛИ ЛИРЫ?",
+   "title_color": "blue",
+   "text": "Терминал спрашивает: платить в долларах или в лирах? Кажется, без разницы."
+  },
+  {
+   "vo": "vo3.mp3",
+   "imgs": [
+    "img4.png",
+    "img1.png",
+    "img4.png"
+   ],
+   "title": "+3–8% СВЕРХУ",
+   "title_color": "red",
+   "text": "Но если выбрать не местную валюту, пересчитывать будет банк магазина. По своему курсу. И сверху — от трёх до восьми процентов.",
+   "fx": "counter",
+   "shake": true
+  },
+  {
+   "vo": "vo4.mp3",
+   "imgs": [
+    "img3.png",
+    "img2.png"
+   ],
+   "title": "DCC —\nЛОВУШКА ДЛЯ ТУРИСТОВ",
+   "title_color": "red",
+   "text": "Это называется динамическая конвертация. И на ней туристы теряют тысячи за один отпуск."
+  },
+  {
+   "vo": "vo5.mp3",
+   "imgs": [
+    "img5.png"
+   ],
+   "title": "ВСЕГДА ПЛАТИ\nВ МЕСТНОЙ ВАЛЮТЕ",
+   "title_color": "blue",
+   "text": "Правило простое: всегда плати в валюте страны. Лиры, баты, дирхамы — только местная валюта.",
+   "fx": "stamp"
+  },
+  {
+   "vo": "vo6.mp3",
+   "imgs": [
+    "img6.png"
+   ],
+   "title": "СОХРАНИ,\nЧТОБЫ НЕ ЗАБЫТЬ",
+   "title_color": "blue",
+   "text": "Сохрани, чтобы не забыть на кассе. А чек-лист денег в поездку — в Телеграме, ссылка в профиле.",
+   "fx": "save"
+  }
+ ],
+ "overlays": {
+  "img1.png": "circle",
+  "img3.png": "receipt"
+ }
 }
