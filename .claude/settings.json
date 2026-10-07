@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git fetch:*)",
+      "Bash(git pull:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(mkdir:*)",
+      "Bash(python3:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(ffprobe:*)",
+      "Bash(npm install:*)",
+      "Bash(npx remotion:*)",
+      "Bash(tar:*)",
+      "WebSearch",
+      "WebFetch",
+      "mcp__higgsfield__*",
+      "mcp__vidiq__*",
+      "mcp__NexLev__*"
+    ]
+  }
+}

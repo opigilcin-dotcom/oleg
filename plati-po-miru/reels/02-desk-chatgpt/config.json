@@ -1,0 +1,73 @@
+{
+  "fps": 30,
+  "durationInFrames": 600,
+  "brand": "Плати по всему миру",
+  "promoCode": "LEO500",
+  "siteUrl": "[ССЫЛКА]",
+  "colors": {
+    "accent": "#2F72E0",
+    "ink": "#141C21",
+    "paper": "#F7F4EC",
+    "note": "#FFE98A",
+    "editor": "#1E2026"
+  },
+  "texts": {
+    "hook": [
+      "НУЖНА ПЛАТНАЯ",
+      "ВЕРСИЯ",
+      "CHATGPT?"
+    ],
+    "question": [
+      "А КАК ",
+      "ОПЛАТИТЬ?"
+    ],
+    "reply": "А подходящей карты нет?",
+    "reveal": "Вот один из вариантов",
+    "productBrand": "«Плати по всему миру»",
+    "productTitle": [
+      "Виртуальная карта",
+      "для зарубежных подписок"
+    ],
+    "link": "Ссылка — в описании",
+    "promoHeader": [
+      "Регистрируйся",
+      "с нашим промокодом"
+    ],
+    "adLabel": "Реклама · [РЕКЛАМОДАТЕЛЬ] · erid: [ERID]",
+    "note": [
+      "идея:",
+      "рилс про",
+      "нейросети"
+    ],
+    "script": [
+      "СЦЕНА 1 — ХУК",
+      "Рабочий стол.",
+      "Вопрос в кадр:",
+      "«Нужна платная",
+      "версия ChatGPT?»",
+      "",
+      "СЦЕНА 2 — ОТВЕТ",
+      "Показать сайт…"
+    ],
+    "promoBenefit": "Скидка 500 ₽"
+  },
+  "assets": {
+    "desk": "desk.png",
+    "site": "site_chatgpt.png",
+    "card": "site_card_subs.png",
+    "audio": "mix.wav",
+    "fontMain": "Montserrat-ExtraBold.ttf",
+    "fontHand": "Caveat.ttf",
+    "fontMono": "PTMono.ttf"
+  },
+  "sources": {
+    "desk.png": "https://d8j0ntlcm91z4.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/hf_20261007_072147_3ba1d291-500d-4058-b686-d23c3d7976e6.png",
+    "site_chatgpt.png": "https://d2ol7oe51mr4n9.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/bcaaf44f-8f4d-4a78-b128-f2c468b3d49c.png",
+    "site_card_subs.png": "https://d2ol7oe51mr4n9.cloudfront.net/user_3FcaNpN5kYVpXp4PHFWx6FQ3hg7/004580bd-4d19-4f88-8164-a718eb4d9469.png"
+  },
+  "cardTitleY": 598,
+  "cardTitleX": [
+    290,
+    665
+  ]
+}

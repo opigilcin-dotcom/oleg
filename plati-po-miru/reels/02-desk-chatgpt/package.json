@@ -1,0 +1,10 @@
+{
+  "name": "desk-reel",
+  "private": true,
+  "scripts": {
+    "prep": "python3 prep.py",
+    "render": "remotion render src/index.ts DeskReel out/raw.mp4 --crf=18 --concurrency=6"
+  },
+  "dependencies": {"@remotion/cli": "^4.0.0", "remotion": "^4.0.0", "react": "^18.3.1", "react-dom": "^18.3.1"},
+  "devDependencies": {"typescript": "^5.4.0", "@types/react": "^18.3.0"}
+}
