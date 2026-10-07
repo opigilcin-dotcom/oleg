@@ -3,3 +3,4 @@ out/
 public/*.wav
 public/*.ttf
 public/*.png
+__pycache__/
