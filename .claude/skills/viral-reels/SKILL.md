@@ -46,6 +46,10 @@ description: Playbook for producing short vertical videos (Reels / Shorts / TikT
 - Remotion: полному Chromium нужен headless shell — в песочнице `npx remotion browser ensure`, локально `--browser-executable` на `/opt/pw-browsers/chromium_headless_shell-*/…/headless_shell`. Локально удобно гонять `remotion still` на заглушках для проверки раскладки до рендера.
 - Скриншоты сайтов — `playwright-core` в песочнице (`chromium.launch()` без пути), мобильный вьюпорт 432×768 @2.5x = 1080 px по ширине.
 
+## 5a. Посмотреть чужой ролик (разбор конкурента/выброса)
+- Навык `watch` (`.claude/skills/watch`): `python3 .claude/skills/watch/scripts/watch.py "<URL>" --engine local --question "<вопрос>"` — кадры + расшифровка. Нужны ffmpeg и yt-dlp (`pip install --user "yt-dlp[default]"`).
+- В облачном контейнере YouTube/Instagram/TikTok могут быть закрыты сетевой политикой (403 от прокси) — тогда смотреть через `vidiq_video_watch`, `vidiq_watch_shortform_content`, `NexLev watch_youtube_video_and_ask` / `watch_instagram_video_and_ask` / `watch_tiktok_video_and_ask`.
+
 ## 6. Контроль качества перед выдачей
 - `ffprobe`: 1080×1920, 30 fps, нужное число кадров, h264 + aac; громкость `loudnorm` ≈ −14 LUFS.
 - Контакт-лист 6–12 кадров по всем сценам → посмотреть глазами: текст не обрезан, слова не слипаются, ничего важного не под UI (верх ~150 px, низ ~350 px), промокод целиком виден весь финал.
