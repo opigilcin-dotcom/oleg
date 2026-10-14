@@ -1,12 +1,8 @@
 {
   "mcpServers": {
     "ara": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-remote",
-        "https://woso.io/api/mcp?token=${ARA_MCP_TOKEN}"
-      ]
+      "type": "http",
+      "url": "https://woso.io/api/mcp?token=${ARA_MCP_TOKEN}"
     }
   }
 }
