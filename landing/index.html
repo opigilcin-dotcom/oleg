@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Trend Lab — бесплатный пак промтов для вирусных AI-видео</title>
+<meta name="description" content="Бесплатно: готовые промты для Kling, Seedance, Veo, текстовые промты для чата и шпаргалка по тому, как делать AI-видео для Reels и TikTok.">
+<meta property="og:title" content="Бесплатный пак промтов для вирусных AI-видео">
+<meta property="og:description" content="Копируй промт → вставляй в генератор → снимай Reels. Без опыта.">
+<style>
+:root{
+  --bg:#0c0d12;--surface:#161823;--surface2:#1d2030;--text:#eef0f7;--muted:#9aa0b4;
+  --line:#2a2e42;--accent:#7c5cff;--accent2:#22d3a6;--warn:#ffb020;--radius:14px;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){--bg:#f6f7fb;--surface:#fff;--surface2:#eef0f7;--text:#14162a;--muted:#5b6178;--line:#dde0ee;--accent2:#0a7f62}
+}
+:root[data-theme="light"]{--bg:#f6f7fb;--surface:#fff;--surface2:#eef0f7;--text:#14162a;--muted:#5b6178;--line:#dde0ee;--accent2:#0a7f62}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent2)}
+.wrap{max-width:960px;margin:0 auto;padding:0 16px}
+header.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.brand{font-weight:800;letter-spacing:-.02em}
+.brand span{color:var(--accent)}
+.btn{display:inline-block;border:0;cursor:pointer;background:linear-gradient(135deg,var(--accent),#a78bfa);color:#fff;font:inherit;font-weight:700;padding:14px 22px;border-radius:12px;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--text);font-weight:600;padding:8px 14px;font-size:14px;border-radius:10px}
+.hero{padding:40px 0 24px;text-align:center}
+.pill{display:inline-block;font-size:13px;color:var(--accent2);border:1px solid var(--line);padding:4px 12px;border-radius:99px;margin-bottom:16px}
+h1{font-size:clamp(30px,6vw,52px);line-height:1.1;letter-spacing:-.03em;margin:0 0 16px}
+h1 em{font-style:normal;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--muted);font-size:clamp(16px,2.5vw,19px);max-width:620px;margin:0 auto 24px}
+.stats{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:28px 0 0}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 18px;min-width:130px}
+.stat b{display:block;font-size:24px}
+.stat small{color:var(--muted)}
+section{padding:36px 0}
+h2{font-size:clamp(24px,4vw,32px);letter-spacing:-.02em;margin:0 0 8px}
+.lead{color:var(--muted);margin:0 0 20px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.card h3{margin:0 0 6px;font-size:17px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.tab{background:var(--surface);color:var(--muted);border:1px solid var(--line);padding:8px 14px;border-radius:99px;cursor:pointer;font:inherit;font-size:14px}
+.tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.prompt{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:12px;position:relative}
+.prompt .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:8px}
+.prompt h3{margin:0;font-size:16px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 0}
+.tag{font-size:12px;background:var(--surface2);color:var(--muted);padding:2px 8px;border-radius:99px}
+.tag.model{color:var(--accent2)}
+.prompt pre{white-space:pre-wrap;word-break:break-word;margin:0;background:var(--surface2);border-radius:10px;padding:12px;font:13.5px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+.locked pre{filter:blur(6px);user-select:none;pointer-events:none}
+.locked .lockmsg{position:absolute;inset:auto 0 18px 0;text-align:center;font-weight:700}
+.gate{background:linear-gradient(135deg,rgba(124,92,255,.18),rgba(34,211,166,.12));border:1px solid var(--accent);border-radius:var(--radius);padding:24px;text-align:center}
+.gate form{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:14px}
+.gate input[type=email]{flex:1 1 240px;max-width:360px;padding:14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--text);font:inherit}
+.gate .fine{color:var(--muted);font-size:13px;margin-top:10px}
+.msg{margin-top:10px;font-weight:600}
+.msg.ok{color:var(--accent2)}.msg.err{color:var(--warn)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:13px}
+code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:.92em}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:8px}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--muted);margin:8px 0 0}
+footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--muted);font-size:13px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--text);color:var(--bg);padding:10px 18px;border-radius:99px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.show{opacity:1}
+@media (max-width:520px){.prompt .top{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="nav">
+    <div class="brand">AI<span>Trend</span>Lab</div>
+    <a class="btn ghost" href="#library">К промтам</a>
+  </header>
+
+  <div class="hero">
+    <span class="pill">🎁 Бесплатно · без опыта · на русском</span>
+    <h1>Пак промтов для <em>вирусных AI-видео</em></h1>
+    <p class="sub">Копируешь промт, вставляешь в Kling, Seedance или Veo и получаешь ролик для Reels, TikTok и Shorts. Плюс шпаргалка, как писать свои.</p>
+    <a class="btn" href="#library">Открыть бесплатные промты ↓</a>
+    <div class="stats">
+      <div class="stat"><b id="statVideo">0</b><small>видео-промтов</small></div>
+      <div class="stat"><b id="statChat">0</b><small>промтов для чата</small></div>
+      <div class="stat"><b>1</b><small>шпаргалка</small></div>
+    </div>
+  </div>
+
+  <section>
+    <h2>Что внутри</h2>
+    <p class="lead">Форматы взяты из роликов, которые набрали миллионы просмотров в Reels и TikTok за последний месяц.</p>
+    <div class="grid">
+      <div class="card"><h3>🎬 Видео-промты</h3><p>Готовые описания сцен на английском: мини-спасение, зум из космоса, шторм-трансформация, танец под дождём, мультяшные персонажи и другие.</p></div>
+      <div class="card"><h3>💬 Промты для чата</h3><p>Вставляешь идею по-русски, а нейросеть сама пишет видео-промт, текст на экран, подпись и контент-план на неделю.</p></div>
+      <div class="card"><h3>📋 Шпаргалка</h3><p>Формула промта, слова для движения камеры, какая модель под какую задачу и разбор типичных ошибок.</p></div>
+    </div>
+  </section>
+
+  <section id="library">
+    <h2>Библиотека промтов</h2>
+    <p class="lead">Первые три открыты сразу. Остальные откроются после того, как оставишь почту.</p>
+    <div class="tabs" role="tablist" id="tabs">
+      <button class="tab" role="tab" aria-selected="true" data-tab="video">🎬 Видео</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="chat">💬 Для чата</button>
+    </div>
+    <div id="list"></div>
+
+    <div class="gate" id="gate">
+      <h2 style="margin-bottom:4px">Открыть все промты и шпаргалку</h2>
+      <div>Оставь почту, и всё откроется на этой же странице. Новые тренды и промты присылаю раз в неделю.</div>
+      <form id="leadForm" novalidate>
+        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required aria-label="Email">
+        <button class="btn" type="submit">Открыть всё бесплатно</button>
+      </form>
+      <div class="msg" id="formMsg" role="status"></div>
+      <div class="fine">Никакого спама. Отписаться можно в одно нажатие в любом письме.</div>
+    </div>
+  </section>
+
+  <section id="cheat" hidden>
+    <h2>📋 Шпаргалка</h2>
+    <p class="lead">Сохрани её и пользуйся, когда будешь писать свои промты.</p>
+
+    <div class="card" style="margin-bottom:12px">
+      <h3>Формула промта</h3>
+      <p><code>камера</code> + <code>кто</code> + <code>действие</code> + <code>где</code> + <code>свет</code> + <code>движение камеры</code> + <code>стиль</code> + <code>звук</code></p>
+      <p style="margin-top:8px">Одно главное действие на клип. В конце добавляй: <code>no text, no subtitles, no watermark</code>.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:12px;overflow-x:auto">
+      <h3>Движение камеры</h3>
+      <table>
+        <tr><th>Что хочешь</th><th>Пиши в промте</th></tr>
+        <tr><td>Наезд</td><td><code>slow push-in</code></td></tr>
+        <tr><td>Отъезд</td><td><code>slow pull-back</code></td></tr>
+        <tr><td>Облёт вокруг</td><td><code>orbiting camera</code></td></tr>
+        <tr><td>Камера идёт за героем</td><td><code>tracking shot from behind</code></td></tr>
+        <tr><td>Вид с дрона</td><td><code>aerial drone shot</code></td></tr>
+        <tr><td>От первого лица</td><td><code>first-person POV</code></td></tr>
+        <tr><td>Неподвижная</td><td><code>static camera</code></td></tr>
+        <tr><td>Замедление</td><td><code>slow motion</code></td></tr>
+      </table>
+    </div>
+
+    <div class="card" style="margin-bottom:12px;overflow-x:auto">
+      <h3>Какую модель брать</h3>
+      <table>
+        <tr><th>Задача</th><th>Модель</th></tr>
+        <tr><td>Движение, физика, вид от первого лица</td><td>Kling</td></tr>
+        <tr><td>Один персонаж в разных сценах (по фото-референсу)</td><td>Seedance</td></tr>
+        <tr><td>Реализм, речь и звук</td><td>Veo</td></tr>
+        <tr><td>Правка уже готового видео</td><td>Runway</td></tr>
+        <tr><td>Быстро проверить идею</td><td>Grok</td></tr>
+      </table>
+      <p style="margin-top:8px">Рабочая схема: идею тестируешь на дешёвой модели, лучший вариант перегенерируешь на дорогой.</p>
+    </div>
+
+    <div class="card" style="overflow-x:auto">
+      <h3>Частые ошибки</h3>
+      <table>
+        <tr><th>Проблема</th><th>Что делать</th></tr>
+        <tr><td>Кривой текст в кадре</td><td>Не проси модель писать текст. Добавляй его в CapCut или Instagram</td></tr>
+        <tr><td>Всё плывёт и каша</td><td>Один клип равно одно действие</td></tr>
+        <tr><td>Лицо меняется</td><td>Сначала картинка-референс, потом видео, клип короче</td></tr>
+        <tr><td>Скучно и статично</td><td>Всегда указывай движение камеры</td></tr>
+        <tr><td>Кредиты кончились за день</td><td>Тест на дешёвой модели и низком разрешении, финал в качестве</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Как пользоваться</h2>
+    <div class="grid">
+      <div class="card"><h3>1. Копируй</h3><p>Нажми «Копировать» у нужного промта.</p></div>
+      <div class="card"><h3>2. Генерируй</h3><p>Вставь в видео-нейросеть. Формат 9:16, длина 5–10 секунд, звук включён.</p></div>
+      <div class="card"><h3>3. Публикуй</h3><p>Добавь текст на экран и трендовый трек, поставь отметку «AI-generated» и выкладывай.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Вопросы</h2>
+    <details><summary>Это правда бесплатно?</summary><p>Да. Промты и шпаргалка бесплатны. Для генерации видео нужен доступ к нейросети (у многих сервисов есть бесплатные кредиты или недорогие тарифы).</p></details>
+    <details><summary>Нужен английский?</summary><p>Нет. Видео-промты уже готовы на английском, а промты для чата принимают идею по-русски.</p></details>
+    <details><summary>Какие нейросети подходят?</summary><p>Промты написаны для Kling, Seedance, Veo, Runway, Grok и MiniMax. Подойдут и похожие модели.</p></details>
+    <details><summary>Можно ли использовать лица знаменитостей?</summary><p>Не стоит. Делай себя или вымышленных персонажей: чужое лицо и голос нарушают права и могут привести к блокировке.</p></details>
+    <details><summary>Что с почтой?</summary><p>Использую её только для рассылки про AI-тренды и промты. Отписка в любом письме.</p></details>
+  </section>
+
+  <footer>
+    <div>Результат зависит от модели, тарифа и количества попыток, быстрый доход не обещаю.</div>
+    <div style="margin-top:6px">Реалистичные AI-ролики публикуй с отметкой «AI-generated». Ссылки на инструменты могут быть партнёрскими, об этом всегда указано рядом.</div>
+  </footer>
+</div>
+<div class="toast" id="toast">Скопировано ✓</div>
+
+<script>
+// ===== Настройки (поменяй под себя) =====
+const CONFIG = {
+  // Адрес формы, который принимает POST (Formspree / Getform / Make / свой). Пусто = демо-режим, просто открывает контент.
+  FORM_ENDPOINT: "",
+  FREE_COUNT: 3,            // сколько промтов открыто без почты
+  STORAGE_KEY: "ailab_unlocked_v1"
+};
+
+const VIDEO = [
+ {t:"Мини-спасение: гигантская рука",m:"Kling / Veo",tags:["Reels","27M просмотров у формата"],p:"Macro shot, a giant human hand gently pours clean water from a small cup over four tiny people sitting on dry cracked ground, the tiny people look up and cheer, water drops sparkle in the sun. Shallow depth of field, photorealistic miniature world, warm light, slow motion. Sound: water drops, tiny voices cheering. No text, no subtitles, no watermark.",n:"Варианты: рука укрывает людей от дождя, строит мост через ручей, достаёт котёнка размером с дом."},
+ {t:"Зум из космоса до магазина",m:"Kling / Veo",tags:["Reels","10.6M просмотров у формата"],p:"One continuous ultra-fast zoom from outer space: the whole planet Earth, diving through clouds into a country, a big city, a busy street, ending on the glass front door of a small flower shop with a pink awning. Seamless camera dive, no cuts, photorealistic, satellite imagery turning into cinematic street footage. Sound: whoosh building, then city ambience. No text, no watermark.",n:"Меняй финал на узнаваемое место аудитории: кофейня, бренд, знаменитое здание."},
+ {t:"Шторм: трансформация со своего фото",m:"Seedance",tags:["Тренд сейчас","нужен референс-фото"],p:"The person from the reference photo stands on a rooftop at dusk, dark storm clouds rolling in, wind whipping their hair and clothes, lightning flashes behind them, they slowly raise their head and look into the camera with intense calm. Slow push-in, dramatic cinematic grade, photorealistic, same face as reference. Sound: thunder, wind. No text, no watermark.",n:"Серия из 3 образов: добавь wearing a black leather coat / a white suit / a red dress."},
+ {t:"Один герой — три образа одежды",m:"Seedance",tags:["1.8M у формата","2 референса"],p:"The person from the first reference photo wears the outfit from the second reference photo and dances confidently on a sunny city sidewalk, smooth camera tracking, photorealistic, same face and body. Sound: upbeat music. No text, no watermark.",n:"Повтори с 2-й и 3-й одеждой и склей три клипа в CapCut на бит."},
+ {t:"Танец под дождём ночью",m:"Kling",tags:["Raindance-тренд"],p:"A person dances alone in the middle of an empty street at night in heavy rain, neon signs reflecting on the wet asphalt, rain drops visible in slow motion, hair and clothes soaked, free joyful movement. Low-angle tracking camera, cinematic, photorealistic. Sound: heavy rain, deep bass beat. No text, no watermark.",n:"Лицо реального артиста не используй, делай вымышленного персонажа или себя."},
+ {t:"Вымышленный герой в лобби отеля",m:"Kling / Seedance",tags:["Hotel Lobby-тренд"],p:"A stylish fictional character in a luxurious hotel lobby with marble floors and golden chandeliers walks slowly toward the camera, confident, wearing sunglasses and a designer coat, other guests move in the background. Smooth steadicam, cinematic, shallow depth of field, photorealistic. Sound: lobby ambience, soft jazz. No text, no watermark.",n:"Музыку добавляй из библиотеки трендов своей соцсети."},
+ {t:"Мультяшный слонёнок (AI-потешки)",m:"Kling (картинка → видео)",tags:["YouTube side-hustle"],p:"The baby elephant claps its trunk and dances happily, bouncing in rhythm, smiling at the camera. Pixar-style 3D animation, bright playground, smooth loop. Sound: cheerful nursery rhyme melody. No text, no watermark.",n:"Сначала картинка: Cute 3D cartoon baby elephant with big eyes and a tiny blue scarf, bright playground, Pixar style, soft light."},
+ {t:"Танцующий 3D-персонаж с аффирмацией",m:"Kling / MiniMax",tags:["Серия","луп"],p:"A cute stylized 3D cartoon girl with big eyes and a pink hoodie dances happily in a pastel bedroom, confident moves, smiling at the camera, full body, seamless loop. Pixar style, soft light. No text, no watermark.",n:"Текст «Today's mindset: I can do it» добавь в монтаже. Меняй фразу каждый день."},
+ {t:"Абсурдная фабрика (satisfying)",m:"Kling",tags:["1.3M у формата"],p:"A giant shiny factory machine: a ripe watermelon rolls onto a conveyor belt, goes into a chrome machine with spinning gears, and comes out the other side as a perfectly wrapped box of watermelon candy. Static side camera, photorealistic, clean industrial lighting, seamless loop. Sound: mechanical whirring, a satisfying click. No text, no watermark.",n:"Варианты: апельсин в бутылку сока, овца в свитер, дерево в карандаши."},
+ {t:"Море из предметов",m:"Seedance",tags:["28M у формата"],p:"A young woman standing on a wooden dock at a tropical beach scoops shiny smartphones out of turquoise water with a big fishing net, the entire sea is made of thousands of floating phones glittering in the sun, then she rides a jet ski across the sea of phones. Bright daylight, photorealistic, smooth tracking camera. Sound: upbeat music, splashing. No text, no watermark.",n:"Подставляй свой предмет: монеты, кроссовки, LEGO, розы, пончики."},
+ {t:"Исторический персонаж сегодня",m:"Seedance (референс)",tags:["4.7M у формата"],p:"Cleopatra, black bob hair with gold beads, winged eyeliner, golden collar, orders coffee in a modern café holding a stone tablet instead of a phone, the barista is confused. Photorealistic, cinematic, shallow depth of field. No text, no watermark.",n:"Сделай референс-картинку героя, потом 5 клипов (гараж, спорткар, баскетбол, кафе, красная дорожка) и склей под бит."},
+ {t:"Хэллоуин: мгновенная трансформация",m:"Kling / Seedance",tags:["Сезонное, до 31 октября"],p:"A young woman looks into the camera smiling in casual clothes, then she snaps her fingers and instantly transforms: pale skin with porcelain cracks, glowing white eyes, black lace dress, candles and fog appear in a dark gothic room. Smooth morph transition, photorealistic, cinematic. Sound: finger snap, deep whoosh, a whisper. No text, no watermark.",n:"Делай серию «31 день Хэллоуина»: мумия, вампир, кукла, ведьма."}
+];
+
+const CHAT = [
+ {t:"Генератор видео-промтов из идеи",m:"Любой чат",tags:["Главный"],p:"Ты профессиональный промт-инженер для AI-видео (Kling, Seedance, Veo, Runway).\nМоя идея (по-русски): [опиши идею].\nФормат: вертикальное видео 9:16 для Reels, длина [5/10] сек.\nСделай: 1) 3 варианта промта на английском по формуле: камера + кто + действие + где + свет + движение камеры + стиль + звук, каждый до 80 слов, одно главное действие. 2) В конце каждого добавь: no text, no subtitles, no watermark. 3) Под каждым одна строка по-русски, чем он отличается. 4) Посоветуй модель.",n:"Подставь идею вместо [опиши идею] и отправь."},
+ {t:"Что делать с новым трендом",m:"Любой чат",tags:["Тренды"],p:"Я веду аккаунт про AI-тренды. Появился тренд: [что на видео, какая музыка, какой инструмент].\nСделай: 1) пошаговый туториал для новичка (6-8 шагов). 2) Промт на английском, чтобы повторить механику со своим вымышленным персонажем, не лицом знаменитости. 3) Текст на экран для первых 2 секунд (до 8 слов). 4) Подпись с призывом написать в комментариях ключевое слово и 10 хештегов. 5) Предупреждение: что в этом тренде можно нарушить (музыка, лицо реального человека).",n:"Тренд живёт 1-3 недели, поэтому делай туториал в первые дни."},
+ {t:"Разбор чужого вирусного Reels",m:"Любой чат",tags:["Разбор"],p:"Опишу чужой вирусный Reels. Определи: 1) почему он залетел (хук, эмоция, призыв к действию); 2) шаблон, который можно повторить; 3) промт для AI-видео в таком стиле, но с другим сюжетом; 4) ещё 5 вариантов той же механики.\nОписание ролика: [что происходит по секундам]",n:"Описывай по секундам: 0-2 сек, 2-6 сек и так далее."},
+ {t:"Мини-сериал с одним героем",m:"Любой чат",tags:["Сериал"],p:"Придумай мини-сериал для Reels из [3] частей по [25] секунд. Жанр: [драма / фантастика / мистика]. Герой: [кто].\nДля каждой части: хук первых 2 секунд, 4-5 клипов по 5 секунд с промтом на английском для видео-нейросети, в каждом промте одинаковое описание внешности героя слово в слово, и клиффхэнгер в конце.\nОтдельно в начале дай промт на английском для референс-картинки героя (full-body, нейтральный фон).",n:"Сначала сделай референс-картинку героя, потом загружай её в каждый клип."},
+ {t:"Контент-план на 7 дней",m:"Любой чат",tags:["План"],p:"Составь контент-план на 7 дней для аккаунта про AI-тренды и инструменты, 1-2 Reels в день. Форматы: туториал по тренду, команда и результат, своё лицо в тренде, новая функция приложения за 30 секунд, заработок на AI-видео.\nТаблица: день | формат | идея | промт | текст на экран | слово для комментария.",n:"Результат вставь в заметки и снимай по списку."},
+ {t:"Почини неудачную генерацию",m:"Любой чат",tags:["Ремонт"],p:"Я сгенерировал видео по промту: [вставь промт].\nПроблема: [лицо плывёт / нет движения / кривой текст / слишком быстро].\nОбъясни причину в 2 строках и дай исправленный промт на английском: одно главное действие, движение камеры, запреты no text, no morphing, no extra fingers.",n:"Меняй по одной вещи за раз, так видно, что именно помогло."}
+];
+
+const $ = s => document.querySelector(s);
+let unlocked = false;
+try { unlocked = localStorage.getItem(CONFIG.STORAGE_KEY) === "1"; } catch(e) {}
+let currentTab = "video";
+
+$("#statVideo").textContent = VIDEO.length;
+$("#statChat").textContent = CHAT.length;
+
+function toast(msg){const t=$("#toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),1600);}
+
+function copy(text){
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(()=>toast("Скопировано ✓"),fallback);
+  } else fallback();
+  function fallback(){
+    const ta=document.createElement("textarea");ta.value=text;document.body.appendChild(ta);ta.select();
+    try{document.execCommand("copy");toast("Скопировано ✓");}catch(e){toast("Не удалось скопировать");}
+    ta.remove();
+  }
+}
+
+function render(){
+  const data = currentTab==="video"?VIDEO:CHAT;
+  const list = $("#list"); list.textContent = "";
+  data.forEach((it,i)=>{
+    const locked = !unlocked && i>=CONFIG.FREE_COUNT;
+    const card = document.createElement("div"); card.className="prompt"+(locked?" locked":"");
+    const top = document.createElement("div"); top.className="top";
+    const left = document.createElement("div");
+    const h = document.createElement("h3"); h.textContent=(i+1)+". "+it.t;
+    const tags = document.createElement("div"); tags.className="tags";
+    const mt = document.createElement("span"); mt.className="tag model"; mt.textContent=it.m; tags.appendChild(mt);
+    it.tags.forEach(x=>{const s=document.createElement("span");s.className="tag";s.textContent=x;tags.appendChild(s);});
+    left.appendChild(h); left.appendChild(tags); top.appendChild(left);
+    if(!locked){
+      const b=document.createElement("button"); b.className="btn ghost"; b.type="button"; b.textContent="Копировать";
+      b.addEventListener("click",()=>copy(it.p)); top.appendChild(b);
+    }
+    card.appendChild(top);
+    const pre=document.createElement("pre"); pre.textContent=it.p; card.appendChild(pre);
+    if(!locked && it.n){const n=document.createElement("div");n.className="meta";n.textContent="💡 "+it.n;card.appendChild(n);}
+    if(locked){const l=document.createElement("div");l.className="lockmsg";l.textContent="🔒 Откроется после ввода почты";card.appendChild(l);}
+    list.appendChild(card);
+  });
+  $("#gate").hidden = unlocked;
+  $("#cheat").hidden = !unlocked;
+}
+
+document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{
+  currentTab=b.dataset.tab;
+  document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-selected",x===b?"true":"false"));
+  render();
+}));
+
+function setMsg(text,cls){const m=$("#formMsg");m.textContent=text;m.className="msg "+(cls||"");}
+
+$("#leadForm").addEventListener("submit",async e=>{
+  e.preventDefault();
+  const email=$("#email").value.trim();
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){setMsg("Проверь адрес почты","err");return;}
+  setMsg("Отправляю…");
+  try{
+    if(CONFIG.FORM_ENDPOINT){
+      const r=await fetch(CONFIG.FORM_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({email,source:"landing-promt-pack"})});
+      if(!r.ok) throw new Error("http "+r.status);
+    } else {
+      console.info("Демо-режим: FORM_ENDPOINT не задан, почта не сохраняется.");
+    }
+    try{localStorage.setItem(CONFIG.STORAGE_KEY,"1");}catch(e){}
+    unlocked=true; render(); setMsg("");
+    toast("Всё открыто 🎉");
+    $("#cheat").scrollIntoView({behavior:"smooth"});
+  }catch(err){
+    setMsg("Не получилось отправить. Попробуй ещё раз через минуту.","err");
+  }
+});
+
+render();
+</script>
+</body>
+</html>
